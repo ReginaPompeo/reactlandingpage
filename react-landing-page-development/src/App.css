@@ -2,39 +2,156 @@
   text-align: center;
   background-color: #FCD1E3; /* Fundo azul */
   height: 100vh; /* Define a altura da página como 100% da altura da tela */
+  overflow-y: auto; /* Adiciona uma barra de rolagem vertical */
 }
+
+/* HEADER */
 
 /* Estilo para o cabeçalho da Landing Page */
 .LandingPage-header {
   display: flex;
   background-color: #731F3E; /* Fundo rosa */
-  height: 60px; /* Define a altura do cabeçalho como 100 pixels */
+  height: 10%; /* Define a altura do cabeçalho como 100 pixels */
   padding-top: 5px; /* Espaço do topo */
   padding-left: 20px; /* Espaço do lado esquerdo */
   padding-bottom: 5px;
 }
 
-.rounded-image {
-  border-radius: 50%; /* ou outro valor, dependendo do quanto deseja arredondar */
+.LandingPage-header .rounded-image {
+  border-radius: 100%; /* ou outro valor, dependendo do quanto deseja arredondar */
 }
+
+
+/* APRESENTAÇÃO */
 
 .presentation-container{
+  align-items: center;
+  background-color: #1010d6; /* Fundo lilás */
+  padding-top: 20px;
   display: flex;
-  justify-content:space-around;
-  padding-top: 100px;
-  background-color: antiquewhite;
+  justify-content: center;
+  height: 50%;
+
 }
 
-.presentation-container.presentation-text{
+.presentation-text {
   text-align: left;
   flex: 1;
   padding-top: 60px;
-  background-color:green ;
+  background-color: green; /* Esta cor será aplicada */
 }
 
-.presentation-container.presentation-image{
-  flex: 1;
-  width: 100%;
-  height: 100%;
-  background-color: gold;
+.presentation-text-top{
+  background-color: crimson;
 }
+
+.presentation-text-bottom{
+  background-color: darkviolet;
+}
+
+.presentation-image {
+  text-align: right;
+  flex: 1;
+  background-color: gold; /* Esta cor será aplicada */
+  align-items: center;
+}
+
+.presentation-image .personal-image {
+  /* Seus estilos personalizados para o elemento personal-image */
+  background-color: red; /* Por exemplo, alterando a cor de fundo para vermelho */
+}
+
+
+/* BLOCOS */
+.the-block{
+  background-color: aquamarine;
+  width: 100%;
+  height: 40%;
+  justify-content: center;
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: left; /* Alinha os elementos horizontalmente */
+}
+.the-block .block-one{
+  background-color: dodgerblue;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 100%;
+}
+
+.sub-block-one {
+  background-color: #FFD700; /* Cor de fundo amarela */
+  padding: 10px;
+  margin: 5px;
+}
+
+.sub-block-two {
+  background-color: #00FF00; /* Cor de fundo verde */
+  padding: 10px;
+  margin: 5px;
+}
+
+.sub-block-three {
+  background-color: #0000FF; /* Cor de fundo azul */
+  padding: 10px;
+  margin: 5px;
+}
+.the-block .block-two{
+  background-color:#00FF00;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 100%;
+}
+
+/* BANNER DE INFORMAÇÕES */
+
+.information-banner-text {
+  background-color: #FFA07A; /* Coral */
+  padding: 10px;
+  text-align: left;
+}
+
+.information-banner-blocks{
+  background-color: #00FF00;
+  justify-content: center;
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: Center; /* Alinha os elementos horizontalmente */
+}
+
+.information-banner-block-one {
+  background-color: #ADD8E6; /* Light Blue */
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.information-banner-block-two {
+  background-color: #98FB98; /* Pale Green */
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+.information-banner-block-three {
+  background-color: #FFD700; /* Gold */
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* Sub-blocos */
+.information-banner-sub-block-one,
+.information-banner-sub-block-two,
+.information-banner-sub-block-three {
+  background-color: #FFF; /* White */
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
