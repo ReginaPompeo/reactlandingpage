@@ -1,25 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import LogoPadrao from '../src/images/imagepadrao.jpg';
+import PresentationImage from '../src/images/imagemapresentacao.jpg'
 
-function App() {
+function LandingPageFunction() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="LandingPage">
+      <header className="LandingPage-header">
+        <img src={LogoPadrao} alt="Logo" className="rounded-image" />
       </header>
+      <div className="presentation-container">
+        <div className="presentation-text">
+          <div className="presentation-text-top">
+            <h2>Olá eu sou</h2>
+          </div>
+          <div className="presentation-text-bottom">
+            <p>Renata Oliveira</p>
+          </div>
+        </div>
+        <div className="presentation-image">
+        </div>
+      </div>
     </div>
   );
 }
 
-export default App;
+export default LandingPageFunction;
