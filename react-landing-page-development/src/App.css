@@ -18,7 +18,7 @@
 }
 
 .LandingPage-header .rounded-image {
-  border-radius: 100%; /* ou outro valor, dependendo do quanto deseja arredondar */
+  border-radius: 500px; /* ou outro valor, dependendo do quanto deseja arredondar */
 }
 
 
@@ -31,7 +31,6 @@
   display: flex;
   justify-content: center;
   height: 50%;
-
 }
 
 .presentation-text {
@@ -39,27 +38,24 @@
   flex: 1;
   padding-top: 60px;
   background-color: green; /* Esta cor será aplicada */
+
 }
 
 .presentation-text-top{
   background-color: crimson;
+  margin-left: 400px;
 }
 
 .presentation-text-bottom{
   background-color: darkviolet;
+  margin-left: 400px;
 }
 
-.presentation-image {
-  text-align: right;
-  flex: 1;
-  background-color: gold; /* Esta cor será aplicada */
-  align-items: center;
+.presentation-image{
+  margin-right: 300px;
+  
 }
 
-.presentation-image .personal-image {
-  /* Seus estilos personalizados para o elemento personal-image */
-  background-color: red; /* Por exemplo, alterando a cor de fundo para vermelho */
-}
 
 
 /* BLOCOS */
@@ -67,7 +63,6 @@
   background-color: aquamarine;
   width: 100%;
   height: 40%;
-  justify-content: center;
   display: flex;
   flex-direction:row;
   align-items: center;
@@ -123,35 +118,196 @@
 
 .information-banner-block-one {
   background-color: #ADD8E6; /* Light Blue */
-  padding: 10px;
-  margin-bottom: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .information-banner-block-two {
   background-color: #98FB98; /* Pale Green */
-  padding: 10px;
-  margin-bottom: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 
 .information-banner-block-three {
   background-color: #FFD700; /* Gold */
-  padding: 10px;
-  margin-bottom: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
 }
 
 /* Sub-blocos */
 .information-banner-sub-block-one,
 .information-banner-sub-block-two,
 .information-banner-sub-block-three {
-  background-color: #FFF; /* White */
-  padding: 10px;
-  margin-bottom: 5px;
+  padding: 10PX;
 }
 
+/* ABOUT ME */
+.about-me-container{
+  background-color: pink; /* Coral */
+  text-align: left;
+  padding-top: 10PX;
+}
+
+.about-me-title{
+  display: flex;
+  align-items: center;
+  background-color: #FFD700;
+  
+}
+
+.about-me-text{
+  background-color: #731F3E;
+  display: flex;
+  align-items: center;
+}
+
+.about-me-blocks{
+  background-color: #00FF00;
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: Center; /* Alinha os elementos horizontalmente */
+}
+
+.about-me-block-one{
+  background-color: darkgreen;
+  margin-right: 20px;
+}
+
+.about-me-block-two{
+  background-color: saddlebrown;
+  margin-right: 20px;
+}
+
+.about-me-block-three{
+  background-color: lightskyblue;
+}
+
+.second-information-banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: dodgerblue;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 150px;
+}
+
+.customers-say-container {
+  /* Estilos para o container principal */
+  background-color: blue; /* Cor de fundo para o container principal */
+  height: 200px;
+}
+
+.customers-say-title {
+  /* Estilos para o título */
+  background-color: black; /* Cor de fundo para o título */
+  padding: 10px; /* Espaçamento interno */
+}
+
+.customers-say-blocks {
+  /* Estilos para o contêiner dos blocos */
+  display: flex;
+  justify-content: space-between; /* Distribui os blocos igualmente */
+  background-color: black;
+  height: 150px;
+  padding-top: 80px;
+}
+
+.customers-say-block-one {
+  /* Estilos para o primeiro bloco */
+  background-color: lightgreen; /* Cor de fundo para o primeiro bloco */
+  padding: 10px; /* Espaçamento interno */
+  height: 300px;
+  width: 200px;
+  margin-right: 15px;
+}
+
+.customers-say-block-two {
+  /* Estilos para o segundo bloco */
+  background-color: lightcoral; /* Cor de fundo para o segundo bloco */
+  padding: 10px; /* Espaçamento interno */
+  height: 300px;
+  width: 200px;
+  margin-right: 15px;
+}
+
+.customers-say-block-three {
+  /* Estilos para o terceiro bloco */
+  background-color: lightsalmon; /* Cor de fundo para o terceiro bloco */
+  padding: 10px; /* Espaçamento interno */
+  height: 300px;
+  width: 200px;
+}
+
+.customers-say-block-one,
+.customers-say-block-two,
+.customers-say-block-three{
+  border-radius: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.contact-container{
+  margin-top: 350px;
+  background-color: teal;
+  flex-direction:column;
+  display: flex;
+  flex-direction: row;
+  height: 50%;
+}
+
+.contact-information{
+  background-color: #FFD700;
+  margin-left: 30px;  
+  width: 35%;
+}
+
+.contact-fields{
+  background-color: white;
+  margin-right: 30px;  
+  width: 65%;
+  padding-left: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: 40%;
+  padding: 8px;
+  border: none;
+  border-bottom: 2px solid black; /* Adiciona a linha preta embaixo */
+  box-sizing: border-box;
+  transition: border-bottom-color 0.3s ease; /* Adiciona uma transição suave */
+  align-items: center;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-bottom-color: blue; /* Altera a cor da linha quando o campo está em foco */
+}
+
+button[type="submit"] {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: darkblue; /* Altera a cor do botão quando o mouse passa por cima */
+}
