@@ -38,7 +38,8 @@
   flex: 1;
   padding-top: 60px;
   background-color: green; /* Esta cor será aplicada */
-
+  transform: translate(-700px);
+  opacity: 0;
 }
 
 .presentation-text-top{
@@ -53,7 +54,6 @@
 
 .presentation-image{
   margin-right: 300px;
-  
 }
 
 

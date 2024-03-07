@@ -1,9 +1,21 @@
-import React, { useState } from 'react';
+import React, { useRef, useState, useLayoutEffect } from 'react';
 import './App.css';
 import LogoPadrao from '../src/images/imagepadrao.jpg';
 import PresentationImage from '../src/images/imagemapresentacao.jpg';
+import emailjs from '@emailjs/browser';
+import {gsap} from 'gsap';
+import {scrollTrigger} from 'gsap/ScrollTrigger';
 
 function LandingPageFunction() {
+
+  useLayoutEffect(() => {
+    gsap.to(".presentation-text", {
+      x:0,
+      opacity: 1
+    })
+  })
+  
+  const form = useRef();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -12,28 +24,35 @@ function LandingPageFunction() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+    setFormData({
+      ...formData,
+      [name]: value
+    });
   };
-  e.preventDefault();
 
-  emailjs
-    .sendForm('gina.celia.pompeo', 'template_bfa6616', form.current, {
-      publicKey: 'TvM_YqZ3Kuup5VN1V',
-    })
-    .then(
-      () => {
-        alert('Mensagem enviada com sucesso!')
-      },
-      (error) => {
-        alert(error.message)
-      },
-    );
-  const handleSubmit = (e) => {
+
+  const sendEmail = (e) => {
+ 
     e.preventDefault();
-    // Aqui você pode fazer algo com os dados do formulário, como enviar para um servidor ou fazer validações
-    console.log(formData);
-    // Limpa os campos após o envio
-    setFormData({ name: '', email: '', message: '' });
+
+    emailjs
+      .sendForm('gina.celia.pompeo', 'template_bfa6616', form.current, {
+        publicKey: 'TvM_YqZ3Kuup5VN1V',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          // Esvaziar os campos do formulário após o envio bem-sucedido
+          setFormData({
+            name: '',
+            email: '',
+            message: ''
+          });
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
   };
 
   return (
@@ -179,7 +198,7 @@ function LandingPageFunction() {
             </div>
           </div>
           <div className="contact-fields">
-            <form onSubmit={handleSubmit}>
+          <form ref={form} onSubmit={sendEmail}>
               <div className="form-group">
                 <label htmlFor="name">Nome:</label>
                   <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required />
@@ -190,7 +209,7 @@ function LandingPageFunction() {
               </div>
               <div className="form-group">
                 <label htmlFor="message">Mensagem:</label>
-                  <textarea id="message" name="message" value={formData.message} onChange={handleChange} rows="5" required></textarea>
+                  <textarea id="message" name="message" value={formData.message} onChange={handleChange} required></textarea>
               </div>
               <button type="submit">Enviar</button>
             </form>
