@@ -4,17 +4,30 @@ import LogoPadrao from '../src/images/imagepadrao.jpg';
 import PresentationImage from '../src/images/imagemapresentacao.jpg';
 import emailjs from '@emailjs/browser';
 import {gsap} from 'gsap';
-import {scrollTrigger} from 'gsap/ScrollTrigger';
+import {ScrollTrigger} from 'gsap/ScrollTrigger';
 
 function LandingPageFunction() {
 
   useLayoutEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
     gsap.to(".presentation-text", {
       x:0,
-      opacity: 1
+      opacity: 1,
+      scrollTrigger:{
+          trigger: ".presentation-text",
+          pin: true, // Fixa o marcador de scroll
+          pinSpacing: false, // Mantém o pin fixo dentro do container
+          markers: true,
+          start: "top 50px",
+          end: "bottom 800px",
+          scrub: true
+      }
     })
-  })
   
+  return() => {
+    gsap.killTweensOf(".presentation-text")
+  }
+}, [])
   const form = useRef();
   const [formData, setFormData] = useState({
     name: '',

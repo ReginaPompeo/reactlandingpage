@@ -40,6 +40,7 @@
   background-color: green; /* Esta cor será aplicada */
   transform: translate(-700px);
   opacity: 0;
+  
 }
 
 .presentation-text-top{
