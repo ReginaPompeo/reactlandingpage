@@ -18,6 +18,7 @@
 }
 
 .LandingPage-header .rounded-image {
+  display: flex;
   border-radius: 500px; /* ou outro valor, dependendo do quanto deseja arredondar */
 }
 
@@ -54,6 +55,7 @@
 }
 
 .presentation-image{
+  display: flex;
   margin-right: 300px;
 }
 
@@ -239,11 +241,10 @@
   height: 300px;
   width: 200px;
 }
-
 .customers-say-block-one,
 .customers-say-block-two,
-.customers-say-block-three{
-  border-radius: 40px;
+.customers-say-block-three {
+  border-radius: 40px; /* Ajuste o valor conforme desejado */
   margin-left: 40px;
   margin-right: 40px;
 }

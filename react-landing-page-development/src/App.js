@@ -9,20 +9,14 @@ import {ScrollTrigger} from 'gsap/ScrollTrigger';
 function LandingPageFunction() {
 
   useLayoutEffect(() => {
+
     gsap.registerPlugin(ScrollTrigger);
+
     gsap.to(".presentation-text", {
-      x:0,
-      opacity: 1,
-      scrollTrigger:{
-          trigger: ".presentation-text",
-          pin: true, // Fixa o marcador de scroll
-          pinSpacing: false, // Mantém o pin fixo dentro do container
-          markers: true,
-          start: "top 50px",
-          end: "bottom 800px",
-          scrub: true
-      }
-    })
+      x: 700,
+      duration: 3,
+      scrollTrigger: { trigger: ".presentation-text", start: "top 30%", markers: true },
+  });
   
   return() => {
     gsap.killTweensOf(".presentation-text")
