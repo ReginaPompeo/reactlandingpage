@@ -2,26 +2,46 @@ import React, { useRef, useState, useLayoutEffect } from 'react';
 import './App.css';
 import LogoPadrao from '../src/images/imagepadrao.jpg';
 import PresentationImage from '../src/images/imagemapresentacao.jpg';
+import ImagemWhatsApp from '../src/images/WhatsApp-Icon.png';
+import ImagemInstagram from '../src/images/Instagram-Icone.png';
 import emailjs from '@emailjs/browser';
 import {gsap} from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
 
 function LandingPageFunction() {
 
+  const el = useRef();
+  const tl = useRef();
+
   useLayoutEffect(() => {
 
     gsap.registerPlugin(ScrollTrigger);
 
-    gsap.to(".presentation-text", {
-      x: 700,
-      duration: 3,
-      scrollTrigger: { trigger: ".presentation-text", start: "top 30%", markers: true },
-  });
-  
-  return() => {
-    gsap.killTweensOf(".presentation-text")
-  }
-}, [])
+    gsap.to([".presentation-text", ".presentation-image"], {
+        x: 0,
+        opacity: 1,
+    });
+
+    return () => {
+        gsap.killTweensOf([".presentation-container"])
+    }
+}, []);
+
+  useLayoutEffect(() => {
+
+    gsap.registerPlugin(ScrollTrigger)
+    const ctx = gsap.context(() => {
+      tl.current = gsap.timeline({
+      })
+    }, el)
+
+    return () => {
+      gsap.killTweensOf(".customers-say-container")
+    }
+
+  }, [])
+
+
   const form = useRef();
   const [formData, setFormData] = useState({
     name: '',
@@ -92,27 +112,35 @@ function LandingPageFunction() {
 
         {/* Bloco na parte debaixo */}
         <div className="the-block">
-          <div className="block-one">
+          <div className="blocks">
             <div className="sub-block-one">
-              <p>Sub-bloco 1</p>
+              <p>10</p>
             </div>
             <div className="sub-block-two">
-              <p>Sub-bloco 2</p>
+              <p>ANOS DE OAB</p>
             </div>
             <div className="sub-block-three">
-              <p>Sub-bloco 3</p>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting 
+                industry. Lorem Ipsum has been the industry's standard dummy text 
+                ever since the 1500s.
+              </p>
             </div>
           </div>
-          <div className="block-two">
+          <div className="blocks">
             <div className="sub-block-one">
-              <p>Sub-bloco 1</p>
+              <p>+100</p>
             </div>
             <div className="sub-block-two">
-              <p>Sub-bloco 2</p>
+              <p>CLIENTES ATENDIDOS</p>
             </div>
             <div className="sub-block-three">
-              <p>Sub-bloco 3</p>
-            </div>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting 
+                industry. Lorem Ipsum has been the industry's standard dummy text 
+                ever since the 1500s.
+              </p>
+            </div>  
           </div>
         </div>
 
@@ -174,14 +202,14 @@ function LandingPageFunction() {
           <div className="customers-say-title">
             <p>O que os clientes dizem</p>
           </div>
-          <div className="customers-say-blocks">
-            <div className="customers-say-block-one">
+          <div className="customers-say-blocks" ref={el}>
+            <div className="customers-block">
               <p>bloco um</p>
             </div>
-            <div className="customers-say-block-two">
+            <div className="customers-block">
               <p>bloco dois</p>
             </div>
-            <div className="customers-say-block-three">
+            <div className="customers-block">
               <p>bloco tres</p>
             </div>
           </div>
@@ -223,10 +251,21 @@ function LandingPageFunction() {
           </div>
         </div>
         <div className="footer">
+          <div className="social-medias">
+            <a href="instagram.com/giinapompeo" target="_blank">
+              <img src={ImagemInstagram} width="50px" alt="Fale conosco pelo Instagram" title=""/>
+            </a>
+          </div>
           <p>Desenvolvido por Regina Pompeo</p>
         </div>
-  </div>
 
+        <div className="WhatsApp">
+          <a href="https://wa.me/5511945292874?text=Olá! Gostaria de saber mais informações." target="_blank">
+          <img src={ImagemWhatsApp} width="45px" alt="Fale conosco pelo WhatsApp" title=""/>
+          </a>
+        </div>
+  </div>
+ 
   );
 }
 

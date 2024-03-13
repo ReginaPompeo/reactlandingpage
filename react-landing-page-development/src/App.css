@@ -26,37 +26,47 @@
 /* APRESENTAÇÃO */
 
 .presentation-container{
-  align-items: center;
-  background-color: #1010d6; /* Fundo lilás */
-  padding-top: 20px;
-  display: flex;
+  display:flex;
   justify-content: center;
-  height: 50%;
+  background-color: #1010d6; /* Fundo lilás */
+  justify-content: center;
+  height: 60%;
 }
 
 .presentation-text {
+  margin: auto;
   text-align: left;
-  flex: 1;
-  padding-top: 60px;
   background-color: green; /* Esta cor será aplicada */
   transform: translate(-700px);
   opacity: 0;
+  margin-left: 50px;
+  margin-right: 5vw; 
   
 }
 
 .presentation-text-top{
   background-color: crimson;
-  margin-left: 400px;
+  font-size: 15px;
 }
 
 .presentation-text-bottom{
   background-color: darkviolet;
-  margin-left: 400px;
+  font-size: 30px;
 }
 
 .presentation-image{
+  align-items: right;
   display: flex;
-  margin-right: 300px;
+  margin-left: 30vw; 
+  margin-right: 5vw;
+  max-width: 350px;
+  max-height: 350px;
+  max-width: 100%;
+  height: auto;
+  transform: translate(700px);
+  opacity: 0;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
 }
 
 
@@ -65,42 +75,32 @@
 .the-block{
   background-color: aquamarine;
   width: 100%;
-  height: 40%;
+  height: auto;
   display: flex;
-  flex-direction:row;
-  align-items: center;
-  justify-content: left; /* Alinha os elementos horizontalmente */
+  text-align: left;
 }
-.the-block .block-one{
-  background-color: dodgerblue;
-  margin-left: 10px;
-  margin-right: 10px;
-  height: 100%;
+
+.blocks{
+  width: 250px;
+  margin-left: 60px;
 }
+
 
 .sub-block-one {
   background-color: #FFD700; /* Cor de fundo amarela */
-  padding: 10px;
-  margin: 5px;
+  font-size: 20px;
 }
 
 .sub-block-two {
   background-color: #00FF00; /* Cor de fundo verde */
-  padding: 10px;
-  margin: 5px;
+  font-size: 20px;
 }
 
 .sub-block-three {
   background-color: #0000FF; /* Cor de fundo azul */
-  padding: 10px;
-  margin: 5px;
+  font-size: 15px;
 }
-.the-block .block-two{
-  background-color:#00FF00;
-  margin-left: 10px;
-  margin-right: 10px;
-  height: 100%;
-}
+
 
 /* BANNER DE INFORMAÇÕES */
 
@@ -300,7 +300,7 @@
   border-bottom-color: blue; /* Altera a cor da linha quando o campo está em foco */
 }
 
-button[type="submit"] {
+.button[type="submit"] {
   background-color: blue;
   color: white;
   padding: 10px 20px;
@@ -310,6 +310,13 @@ button[type="submit"] {
   transition: background-color 0.3s ease;
 }
 
-button[type="submit"]:hover {
+.button[type="submit"]:hover {
   background-color: darkblue; /* Altera a cor do botão quando o mouse passa por cima */
+}
+
+.WhatsApp{
+  position:fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 9999;
 }
