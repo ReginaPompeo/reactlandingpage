@@ -37,17 +37,19 @@
   margin: auto;
   text-align: left;
   background-color: green; /* Esta cor será aplicada */
-  transform: translate(-700px);
-  opacity: 0;
   margin-left: 50px;
   margin-right: 5vw; 
+  transform: translate(-700px);
+  opacity: 0;
   
 }
-
-.presentation-text-top{
-  background-color: crimson;
-  font-size: 15px;
-}
+/*transform: translate(-700px);
+  //opacity: 0;*/
+  .presentation-text-top {
+    background-color: crimson;
+    font-size: 15px;
+  }
+  
 
 .presentation-text-bottom{
   background-color: darkviolet;
@@ -63,12 +65,12 @@
   max-height: 350px;
   max-width: 100%;
   height: auto;
-  transform: translate(700px);
-  opacity: 0;
   padding-top: 1vw;
   padding-bottom: 1vw;
-}
+  transform: translate(700px);
+  opacity: 0;
 
+}
 
 
 /* BLOCOS */
@@ -83,12 +85,42 @@
 .blocks{
   width: 250px;
   margin-left: 60px;
+  
 }
 
+.block-one{
+  opacity: 0; /* Inicialmente, definimos a opacidade como 0 para tornar o elemento invisível */
+  animation: fadeIn 2.5s ease-in-out forwards; /* Defina a animação de entrada com uma duração de 2 segundos */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* A partir do estado inicial, com opacidade 0 */
+  }
+  to {
+    opacity: 1; /* Até o estado final, com opacidade 1 */
+  }
+}
+
+.block-two{
+  opacity: 0; /* Inicialmente, definimos a opacidade como 0 para tornar o elemento invisível */
+  animation: fadeIn 3.5s ease-in-out forwards; /* Defina a animação de entrada com uma duração de 2 segundos */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* A partir do estado inicial, com opacidade 0 */
+  }
+  to {
+    opacity: 1; /* Até o estado final, com opacidade 1 */
+  }
+}
 
 .sub-block-one {
   background-color: #FFD700; /* Cor de fundo amarela */
   font-size: 20px;
+  
+  
 }
 
 .sub-block-two {
@@ -104,41 +136,48 @@
 
 /* BANNER DE INFORMAÇÕES */
 
+.information-banner{
+  height: 300px;
+  background-color: #00FF00;
+  
+}
 .information-banner-text {
   background-color: #FFA07A; /* Coral */
   padding: 10px;
   text-align: left;
+  margin-left: 50px;
 }
 
 .information-banner-blocks{
   background-color: #00FF00;
-  justify-content: center;
   display: flex;
-  flex-direction:row;
+  justify-content: center;
   align-items: center;
-  justify-content: Center; /* Alinha os elementos horizontalmente */
 }
+
 
 .information-banner-block-one {
   background-color: #ADD8E6; /* Light Blue */
-  margin-right: 10px;
+  margin: 50px;
+  text-align: left;
 }
 
 .information-banner-block-two {
   background-color: #98FB98; /* Pale Green */
-  margin-right: 10px;
+  margin: 50px;
+  text-align: left;
 }
-
 
 .information-banner-block-three {
   background-color: #FFD700; /* Gold */
+  margin: 50px;
+  text-align: left;
 }
 
 /* Sub-blocos */
 .information-banner-sub-block-one,
 .information-banner-sub-block-two,
 .information-banner-sub-block-three {
-  padding: 10PX;
 }
 
 /* ABOUT ME */
@@ -146,19 +185,27 @@
   background-color: pink; /* Coral */
   text-align: left;
   padding-top: 10PX;
+
+}
+
+.about-me-section{
+  margin-left: 50px;
+  background-color: #0000FF;
 }
 
 .about-me-title{
   display: flex;
   align-items: center;
   background-color: #FFD700;
-  
+  margin-left: 50px;
+  margin-bottom: 40px;
 }
 
 .about-me-text{
   background-color: #731F3E;
   display: flex;
   align-items: center;
+  margin-left: 50px;
 }
 
 .about-me-blocks{
@@ -171,16 +218,17 @@
 
 .about-me-block-one{
   background-color: darkgreen;
-  margin-right: 20px;
+  margin:50px;
 }
 
 .about-me-block-two{
   background-color: saddlebrown;
-  margin-right: 20px;
+  margin:50px;
 }
 
 .about-me-block-three{
   background-color: lightskyblue;
+  margin:50px;
 }
 
 .second-information-banner{

@@ -1,4 +1,4 @@
-import React, { useRef, useState, useLayoutEffect } from 'react';
+import React, { useRef, useState, useLayoutEffect, Motion } from 'react';
 import './App.css';
 import LogoPadrao from '../src/images/imagepadrao.jpg';
 import PresentationImage from '../src/images/imagemapresentacao.jpg';
@@ -10,8 +10,6 @@ import {ScrollTrigger} from 'gsap/ScrollTrigger';
 
 function LandingPageFunction() {
 
-  const el = useRef();
-  const tl = useRef();
 
   useLayoutEffect(() => {
 
@@ -20,26 +18,13 @@ function LandingPageFunction() {
     gsap.to([".presentation-text", ".presentation-image"], {
         x: 0,
         opacity: 1,
+        duration: 2, // Define a duração da animação como 2 segundos
     });
 
     return () => {
         gsap.killTweensOf([".presentation-container"])
     }
 }, []);
-
-  useLayoutEffect(() => {
-
-    gsap.registerPlugin(ScrollTrigger)
-    const ctx = gsap.context(() => {
-      tl.current = gsap.timeline({
-      })
-    }, el)
-
-    return () => {
-      gsap.killTweensOf(".customers-say-container")
-    }
-
-  }, [])
 
 
   const form = useRef();
@@ -113,6 +98,7 @@ function LandingPageFunction() {
         {/* Bloco na parte debaixo */}
         <div className="the-block">
           <div className="blocks">
+            <div className="block-one">
             <div className="sub-block-one">
               <p>10</p>
             </div>
@@ -127,7 +113,9 @@ function LandingPageFunction() {
               </p>
             </div>
           </div>
+          </div>
           <div className="blocks">
+            <div className="block-two">
             <div className="sub-block-one">
               <p>+100</p>
             </div>
@@ -140,6 +128,7 @@ function LandingPageFunction() {
                 industry. Lorem Ipsum has been the industry's standard dummy text 
                 ever since the 1500s.
               </p>
+            </div>
             </div>  
           </div>
         </div>
@@ -151,18 +140,36 @@ function LandingPageFunction() {
           </div>
           <div className="information-banner-blocks">
             <div className="information-banner-block-one">
-              <div className="information-banner-sub-block-one">
-                <p> subbloco 1</p>
+              <div className="information-banner-title">
+                <p>Lorem Ipsum</p>
+              </div>
+              <div className="information-banner-block-text">
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                </p>
               </div>
             </div>
             <div className="information-banner-block-two">
-              <div className="information-banner-sub-block-two">
-                <p> subbloco 2</p>
+              <div className="information-banner-title">
+                <p>Lorem Ipsum</p>
+              </div>
+              <div className="information-banner-block-text">
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                </p>
               </div>
             </div>
             <div className="information-banner-block-three">
-              <div className="information-banner-sub-block-three">
-                <p> subbloco 3</p>
+              <div className="information-banner-title">
+                <p>Lorem Ipsum</p>
+              </div>
+              <div className="information-banner-block-text">
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                </p>
               </div>
             </div>
           </div>
@@ -170,7 +177,9 @@ function LandingPageFunction() {
 
         {/* Bloco sobre o o profissional */}
         <div className="about-me-container">
-          <p>Um pouco sobre mim</p>
+          <div className="about-me-section">
+            <p>Um pouco sobre mim</p>
+          </div>
           <div className="about-me-title">
             <p>Quem sou eu?</p>
           </div>
@@ -202,7 +211,7 @@ function LandingPageFunction() {
           <div className="customers-say-title">
             <p>O que os clientes dizem</p>
           </div>
-          <div className="customers-say-blocks" ref={el}>
+          <div className="customers-say-blocks">
             <div className="customers-block">
               <p>bloco um</p>
             </div>
