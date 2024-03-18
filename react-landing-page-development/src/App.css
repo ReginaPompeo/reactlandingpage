@@ -1,20 +1,28 @@
+/* App.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
 .LandingPage{
   text-align: center;
-  background-color: #FCD1E3; /* Fundo azul */
+  background-color:#69233C;  /* Fundo azul */
   height: 100vh; /* Define a altura da página como 100% da altura da tela */
   overflow-y: auto; /* Adiciona uma barra de rolagem vertical */
+  width: 100%;
 }
+
 
 /* HEADER */
 
 /* Estilo para o cabeçalho da Landing Page */
 .LandingPage-header {
   display: flex;
-  background-color: #731F3E; /* Fundo rosa */
+  background-color: black; /* Fundo rosa */
   height: 10%; /* Define a altura do cabeçalho como 100 pixels */
   padding-top: 5px; /* Espaço do topo */
   padding-left: 20px; /* Espaço do lado esquerdo */
   padding-bottom: 5px;
+  width: 100%;
 }
 
 .LandingPage-header .rounded-image {
@@ -28,44 +36,54 @@
 .presentation-container{
   display:flex;
   justify-content: center;
-  background-color: #1010d6; /* Fundo lilás */
+  /*background-color: #1010d6; /* Fundo lilás */
   justify-content: center;
-  height: 60%;
+  height: 30vw;
 }
 
 .presentation-text {
+  margin-left: 50vw;
   margin: auto;
   text-align: left;
-  background-color: green; /* Esta cor será aplicada */
-  margin-left: 50px;
+ /* background-color: green; /* Esta cor será aplicada */
   margin-right: 5vw; 
   transform: translate(-700px);
   opacity: 0;
-  
+  max-width: 450px;
+  max-height: 450px;
+  width: auto;
+
 }
-/*transform: translate(-700px);
-  //opacity: 0;*/
+
   .presentation-text-top {
-    background-color: crimson;
-    font-size: 15px;
+    /*background-color: crimson;*/
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif; 
+    color: black;
   }
   
 
 .presentation-text-bottom{
-  background-color: darkviolet;
-  font-size: 30px;
+  /*background-color: darkviolet;*/
+  font-size: 50px;
+  font-family: "Newsreader", serif; 
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color: black;
+
 }
 
 .presentation-image{
   align-items: right;
   display: flex;
-  margin-left: 30vw; 
-  margin-right: 5vw;
-  max-width: 350px;
-  max-height: 350px;
+  margin-left: 20vw; 
+  margin-right: 15vw;
+  max-width: 450px;
+  max-height: 450px;
   max-width: 100%;
   height: auto;
-  padding-top: 1vw;
+  padding-top: 3vw;
   padding-bottom: 1vw;
   transform: translate(700px);
   opacity: 0;
@@ -75,34 +93,22 @@
 
 /* BLOCOS */
 .the-block{
-  background-color: aquamarine;
-  width: 100%;
+  /*background-color: aquamarine;*/
+  width: auto;
   height: auto;
-  display: flex;
   text-align: left;
+  flex-direction: row;
+  display:flex;
+  color: white;
+  margin: 5vw;
 }
-
 .blocks{
-  width: 250px;
+  display: flex;
+  width: 350px;
   margin-left: 60px;
-  
 }
 
 .block-one{
-  opacity: 0; /* Inicialmente, definimos a opacidade como 0 para tornar o elemento invisível */
-  animation: fadeIn 2.5s ease-in-out forwards; /* Defina a animação de entrada com uma duração de 2 segundos */
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0; /* A partir do estado inicial, com opacidade 0 */
-  }
-  to {
-    opacity: 1; /* Até o estado final, com opacidade 1 */
-  }
-}
-
-.block-two{
   opacity: 0; /* Inicialmente, definimos a opacidade como 0 para tornar o elemento invisível */
   animation: fadeIn 3.5s ease-in-out forwards; /* Defina a animação de entrada com uma duração de 2 segundos */
 }
@@ -116,142 +122,211 @@
   }
 }
 
+.block-two{
+  opacity: 0; /* Inicialmente, definimos a opacidade como 0 para tornar o elemento invisível */
+  animation: fadeIn 4.5s ease-in-out forwards; /* Defina a animação de entrada com uma duração de 2 segundos */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* A partir do estado inicial, com opacidade 0 */
+  }
+  to {
+    opacity: 1; /* Até o estado final, com opacidade 1 */
+  }
+}
+
 .sub-block-one {
-  background-color: #FFD700; /* Cor de fundo amarela */
-  font-size: 20px;
+  /*background-color: #FFD700; /* Cor de fundo amarela */
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif; 
   
   
 }
 
 .sub-block-two {
-  background-color: #00FF00; /* Cor de fundo verde */
-  font-size: 20px;
+  /*background-color: #00FF00; /* Cor de fundo verde */
+  font-size: 19px;
+  font-family: 'Times New Roman', Times, serif; 
 }
 
 .sub-block-three {
-  background-color: #0000FF; /* Cor de fundo azul */
-  font-size: 15px;
+  /*background-color: #0000FF; /* Cor de fundo azul */
+  font-size: 17px;
+  font-family: 'Lato', sans-serif;
+  margin-top: 50px;
 }
 
+/*text-align: justify;   - CÓDIO PARA CASO O TEXTO SEJA JUSTIFICADO*/
 
+.sub-block-one,
+.sub-block-two {
+  margin-bottom: -30px; /* Reduza este valor conforme desejado */
+}
 /* BANNER DE INFORMAÇÕES */
 
 .information-banner{
-  height: 300px;
-  background-color: #00FF00;
+  height: auto;
+  width: 100%;
+  background-color: #808080;
+  padding-bottom: 20px;
   
 }
 .information-banner-text {
-  background-color: #FFA07A; /* Coral */
-  padding: 10px;
   text-align: left;
-  margin-left: 50px;
+  display: flex;
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  
 }
 
 .information-banner-blocks{
-  background-color: #00FF00;
+  /*background-color: #00FF00;*/
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 
-.information-banner-block-one {
-  background-color: #ADD8E6; /* Light Blue */
-  margin: 50px;
-  text-align: left;
-}
-
-.information-banner-block-two {
-  background-color: #98FB98; /* Pale Green */
-  margin: 50px;
-  text-align: left;
-}
-
+.information-banner-block-one,
+.information-banner-block-two,
 .information-banner-block-three {
-  background-color: #FFD700; /* Gold */
-  margin: 50px;
+  /*background-color: #ADD8E6; /* Light Blue */
+  margin-left: 50px;
+  margin-right: 50px;
   text-align: left;
 }
 
-/* Sub-blocos */
-.information-banner-sub-block-one,
-.information-banner-sub-block-two,
-.information-banner-sub-block-three {
+.information-banner-title{
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  color: #69223C;
+  font-weight: bold; /* Deixa a fonte mais gordinha */
+}
+
+.information-banner-block-text,
+.information-banner-text{
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
 }
 
 /* ABOUT ME */
 .about-me-container{
-  background-color: pink; /* Coral */
+  /*background-color: pink; /* Coral */
   text-align: left;
-  padding-top: 10PX;
-
+  padding-top: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .about-me-section{
-  margin-left: 50px;
-  background-color: #0000FF;
+ /* background-color: #0000FF;*/
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
 }
 
+
+
 .about-me-title{
-  display: flex;
-  align-items: center;
-  background-color: #FFD700;
-  margin-left: 50px;
-  margin-bottom: 40px;
+  /*background-color: #FFD700;*/
+  font-family: "Newsreader", serif; 
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+
 }
 
 .about-me-text{
-  background-color: #731F3E;
-  display: flex;
-  align-items: center;
-  margin-left: 50px;
+  /*background-color: #731F3E;*/
+  color: white;
 }
 
 .about-me-blocks{
-  background-color: #00FF00;
+  /*background-color: #00FF00;*/
   display: flex;
   flex-direction:row;
   align-items: center;
   justify-content: Center; /* Alinha os elementos horizontalmente */
+  width: auto;
+  text-align: left;
 }
 
-.about-me-block-one{
-  background-color: darkgreen;
-  margin:50px;
-}
-
-.about-me-block-two{
-  background-color: saddlebrown;
-  margin:50px;
-}
-
+.about-me-block-one,
+.about-me-block-two,
 .about-me-block-three{
-  background-color: lightskyblue;
-  margin:50px;
+  background-color: #808080;
+  height: auto;
+  width: auto;
+  min-width: 250px ;
+  min-height: 390px;
+  border-radius: 50px;
+  display: flex; /* Torna o container um flex container */
+  flex-direction:column; /* Define a direção dos itens como vertical */
+  margin-left: 100px;
+  margin-right: 100px;
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  justify-content: space-between;
+  padding: 15px;
 }
 
-.second-information-banner{
+.about-me-block-one img,
+.about-me-block-two img,
+.about-me-block-three img {
+}
+
+.imagem-faculdade,
+.imagem-pos-graduacao,
+.imagem-cursos {
+  width: 40px;
+  height: 30px;
+}
+
+.title{
+  font-family: "Newsreader", serif; 
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 20px;
+}
+.name-information,
+.subtitle,
+.duration{
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif; 
+
+}
+.second-information-banner {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: dodgerblue;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  height: 150px;
+  flex-direction: column;
+  background-color:lightgray; /* Cor de fundo para o container pai */
+  margin: 5vw;
+  font-size: 25px; /* Tamanho da fonte */
+  font-family: 'Times New Roman', Times, serif;
+  padding-bottom: 2vw;
+}
+
+.second-information-banner-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  text-align: left;
+  margin: 0; /* Remove a margem padrão */
+  /*background-color: lightblue; /* Cor de fundo para o container do título */
+  padding: 10px; /* Espaçamento interno */
 }
 
 .customers-say-container {
   /* Estilos para o container principal */
-  background-color: blue; /* Cor de fundo para o container principal */
+  /*background-color: lightcoral; /* Cor de fundo para o container principal */
   height: 200px;
 }
 
 .customers-say-title {
   /* Estilos para o título */
-  background-color: black; /* Cor de fundo para o título */
+  /*background-color: black; /* Cor de fundo para o título */
   padding: 10px; /* Espaçamento interno */
 }
 
@@ -259,14 +334,14 @@
   /* Estilos para o contêiner dos blocos */
   display: flex;
   justify-content: space-between; /* Distribui os blocos igualmente */
-  background-color: black;
+  /*background-color: black;*/
   height: 150px;
   padding-top: 80px;
 }
 
 .customers-say-block-one {
   /* Estilos para o primeiro bloco */
-  background-color: lightgreen; /* Cor de fundo para o primeiro bloco */
+  /*background-color: lightgreen; /* Cor de fundo para o primeiro bloco */
   padding: 10px; /* Espaçamento interno */
   height: 300px;
   width: 200px;
@@ -275,7 +350,7 @@
 
 .customers-say-block-two {
   /* Estilos para o segundo bloco */
-  background-color: lightcoral; /* Cor de fundo para o segundo bloco */
+  /*background-color: lightcoral; /* Cor de fundo para o segundo bloco */
   padding: 10px; /* Espaçamento interno */
   height: 300px;
   width: 200px;
@@ -284,7 +359,7 @@
 
 .customers-say-block-three {
   /* Estilos para o terceiro bloco */
-  background-color: lightsalmon; /* Cor de fundo para o terceiro bloco */
+  /*background-color: lightsalmon; /* Cor de fundo para o terceiro bloco */
   padding: 10px; /* Espaçamento interno */
   height: 300px;
   width: 200px;
@@ -297,28 +372,62 @@
   margin-right: 40px;
 }
 
-.contact-container{
+.contact-container {
   margin-top: 350px;
-  background-color: teal;
-  flex-direction:column;
+  /*background-color: teal;*/
   display: flex;
-  flex-direction: row;
-  height: 50%;
+  justify-content: center;
 }
 
-.contact-information{
-  background-color: #FFD700;
-  margin-left: 30px;  
+.contact-information {
+  background-color: #7F7F7F;
+  margin-left: 30px;
   width: 35%;
+  text-align: left;
+  display: flex;
+  padding: 5vw 3vw;
+   color: white;
+
 }
+
+.contact-top {
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  color:white;
+}
+
+.contact-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-title{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;  
+
+}
+
+.contact-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;  
+  padding-top: -150px;
+}
+
 
 .contact-fields{
   background-color: white;
   margin-right: 30px;  
   width: 65%;
   padding-left: 20px;
+  
 }
 
+.contact-information,
+.contact-fields {
+  display: flex; /* Ativa o modelo de layout flexível para os elementos filhos */
+  flex-direction: column; /* Alinha os itens verticalmente */
+  justify-content: center; /* Centraliza verticalmente os itens */
+}
 .form-group {
   margin-bottom: 20px;
 }
@@ -330,17 +439,35 @@
 }
 
 .form-group input[type="text"],
-.form-group input[type="email"],
-.form-group textarea {
+.form-group input[type="email"]{
   width: 40%;
   padding: 8px;
   border: none;
   border-bottom: 2px solid black; /* Adiciona a linha preta embaixo */
   box-sizing: border-box;
   transition: border-bottom-color 0.3s ease; /* Adiciona uma transição suave */
-  align-items: center;
+  font-size: 15px;
+  font-family: 'Times New Roman', Times, serif; 
 }
 
+.form-group textarea {
+  width: 40%;
+  padding: 5px;
+  border: none;
+  border-bottom: 2px solid black; /* Adiciona a linha preta embaixo */
+  box-sizing: border-box;
+  transition: border-bottom-color 0.3s ease; /* Adiciona uma transição suave */
+  resize: vertical; /* Permite redimensionamento vertical */
+  position: relative; /* Torna a posição relativa para posicionamento personalizado */
+  font-size: 15px;
+  font-family: 'Times New Roman', Times, serif; 
+}
+
+/* Alinha o placeholder com a linha inferior do campo */
+.form-group textarea::placeholder {
+  position: relative; /* Torna a posição relativa */
+  bottom: -16px; /* Ajusta a posição do placeholder para alinhá-lo com a linha preta */
+}
 .form-group input[type="text"]:focus,
 .form-group input[type="email"]:focus,
 .form-group textarea:focus {
@@ -348,23 +475,227 @@
   border-bottom-color: blue; /* Altera a cor da linha quando o campo está em foco */
 }
 
-.button[type="submit"] {
-  background-color: blue;
+button[type="submit"] {
+  width: 40%;
+  background-color: #69223c;
   color: white;
   padding: 10px 20px;
-  border: none;
+  border: 2px solid #69223c; /* Adiciona uma borda sólida com a cor #69223c */
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Adiciona transição suave para a cor de fundo e cor do texto */
 }
 
-.button[type="submit"]:hover {
-  background-color: darkblue; /* Altera a cor do botão quando o mouse passa por cima */
+button[type="submit"]:hover {
+  background-color: white; /* Altera a cor de fundo para white quando o mouse passa por cima */
+  color: #69223c; /* Mantém a cor do texto como #69223c quando o mouse passa por cima */
+  border: 2px solid #69223c; /* Adiciona uma borda sólida com a cor #69223c */
 }
+
+.footer {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  background-color: black;
+  height: 16vh; /* Define a altura do footer como 100% da viewport height */
+  margin-top: 80px;
+  padding-top: 30px;
+  color: white;
+}
+
+
+.social-medias {
+  display: flex;
+  justify-content: center; /* Alinha os elementos horizontalmente */
+  align-items: center; /* Alinha os elementos verticalmente */
+}
+
+.social-medias img {
+  margin: 0 10px; /* Adiciona um pequeno espaço entre os ícones */
+}
+
+
 
 .WhatsApp{
   position:fixed;
   bottom: 20px;
   right: 30px;
   z-index: 9999;
+}
+
+@media screen and (min-width: 500px) and (max-width: 980px) {
+  .LandingPage-header {
+    height: 5%; /* Define a altura do cabeçalho como 100 pixels */
+  }
+  
+  .LandingPage-header .rounded-image {
+  
+  }
+  .presentation-container{
+
+  }
+  
+  .presentation-text {
+    max-width: 450px;
+    max-height: 450px;
+    width: 50%;
+    margin-left: 8vw;
+    height: auto;
+  
+  }
+  
+  /*transform: translate(-700px);
+    //opacity: 0;*/
+    .presentation-text-top {
+      background-color: crimson;
+      font-size: clamp(10px, 2vw, 20px); /* Define um tamanho de fonte entre 12px e 24px, com base no tamanho da viewport */
+      
+    }
+    
+  
+  .presentation-text-bottom{
+    background-color: darkviolet;
+    font-size: clamp(18px, 3vw, 30px); /* Define um tamanho de fonte entre 12px e 24px, com base no tamanho da viewport */
+  }
+  
+  .presentation-image{
+    display: flex;
+    margin-left: 30vw; 
+    margin-right: 15vw;
+    max-width: 300px;
+    max-height: 300px;
+    max-width: 100%;
+    height: auto;
+  }
+  .the-block{
+    background-color: aquamarine;
+    width: 100%;
+    height: auto;
+    display: flex;
+    text-align: left;
+  }
+  
+  .blocks{
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 10px;
+  }
+  
+  .block-one{
+    opacity: 0; /* Inicialmente, definimos a opacidade como 0 para tornar o elemento invisível */
+    animation: fadeIn 2.5s ease-in-out forwards; /* Defina a animação de entrada com uma duração de 2 segundos */
+    width: 40vw;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0; /* A partir do estado inicial, com opacidade 0 */
+    }
+    to {
+      opacity: 1; /* Até o estado final, com opacidade 1 */
+    }
+  }
+  
+  .block-two{
+    opacity: 0; /* Inicialmente, definimos a opacidade como 0 para tornar o elemento invisível */
+    animation: fadeIn 3.5s ease-in-out forwards; /* Defina a animação de entrada com uma duração de 2 segundos */
+    width: 40vw;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0; /* A partir do estado inicial, com opacidade 0 */
+    }
+    to {
+      opacity: 1; /* Até o estado final, com opacidade 1 */
+    }
+  }
+  
+  .sub-block-one {
+    background-color: #FFD700; /* Cor de fundo amarela */
+    font-size: clamp(20px, 3vw, 25px); /* Define um tamanho de fonte entre 12px e 24px, com base no tamanho da viewport */
+  }
+  
+  .sub-block-two {
+    background-color: #00FF00; /* Cor de fundo verde */
+    font-size: clamp(10px, 3vw, 15px); /* Define um tamanho de fonte entre 12px e 24px, com base no tamanho da viewport */
+  }
+  
+  .sub-block-three {
+    background-color: #0000FF; /* Cor de fundo azul */
+    font-size: clamp(10px, 3vw, 15px); /* Define um tamanho de fonte entre 12px e 24px, com base no tamanho da viewport */
+    margin-top: 30px;
+  }
+
+  
+  .sub-block-three {
+
+  }
+  
+  /*text-align: justify;   - CÓDIO PARA CASO O TEXTO SEJA JUSTIFICADO*/
+  
+  .sub-block-one,
+  .sub-block-two {
+    margin-bottom: -19px; /* Reduza este valor conforme desejado */
+  }
+
+  .information-banner-blocks{
+    flex-direction: row; /* Altera a direção dos elementos para uma linha */
+  }
+  .information-banner-blocks > .information-banner-block-one,
+.information-banner-blocks > .information-banner-block-two,
+.information-banner-blocks > .information-banner-block-three {
+  width: 30%; /* Define a largura dos blocos para ocupar 30% do espaço disponível */
+}
+  .information-banner{
+    justify-content: center;
+  width: auto;
+  text-align: left;
+    
+    
+  }
+  .information-banner-text {
+    padding-left: 4vw;
+  }
+  
+  .information-banner-blocks{
+    justify-content: center;
+    width: auto;
+    text-align: left;
+  }
+  
+  
+  .information-banner-block-one,
+  .information-banner-block-two,
+  .information-banner-block-three {
+    margin-left: 3vw ;
+    margin-right: 3vw;
+  }
+
+  .about-me-blocks{
+    flex-direction:column;
+  }
+  .about-me-blocks > * {
+    margin-bottom: 20px; /* Adiciona uma margem inferior de 20px entre os elementos */
+  }
+  
+  .about-me-block-one,
+  .about-me-block-two,
+  .about-me-block-three{
+    width: 40%;
+    min-width: 200px ;
+    min-height: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+  .title{
+    font-size: clamp(15px, 3vw, 17px);
+  }
+  .name-information,
+  .subtitle,
+  .duration{
+    font-size: clamp(15px, 3vw, 17px);
+  }
+  
 }

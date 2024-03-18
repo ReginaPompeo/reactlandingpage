@@ -1,15 +1,24 @@
 import React, { useRef, useState, useLayoutEffect, Motion } from 'react';
 import './App.css';
-import LogoPadrao from '../src/images/imagepadrao.jpg';
-import PresentationImage from '../src/images/imagemapresentacao.jpg';
-import ImagemWhatsApp from '../src/images/WhatsApp-Icon.png';
-import ImagemInstagram from '../src/images/Instagram-Icone.png';
+import LogoPadrao from '../src/images/LogoPadrao.jpeg';
+import PresentationImage from '../src/images/FotoPessoal.jpg';
+import ImagemWhatsApp from '../src/images/LogoWhatsApp.png';
+import ImagemInstagram from '../src/images/Icone-Instagram.png';
+import IconeWhatsApp from '../src/images/Icone-WhatsApp.png';
+import IconeLinkedin from '../src/images/Icone-Linkedin.png';
+import IconeFaculdade from '../src/images/Faculdade.png';
+import IconeBalanca from '../src/images/Balanca.png';
+import IconeCursos from '../src/images/Livro.png';
 import emailjs from '@emailjs/browser';
 import {gsap} from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
 
 function LandingPageFunction() {
 
+  const linkElement = document.createElement('link');
+  linkElement.rel = 'stylesheet';
+  linkElement.href = 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap';
+  document.head.appendChild(linkElement);
 
   useLayoutEffect(() => {
 
@@ -100,16 +109,14 @@ function LandingPageFunction() {
           <div className="blocks">
             <div className="block-one">
             <div className="sub-block-one">
-              <p>10</p>
+              <p>5</p>
             </div>
             <div className="sub-block-two">
-              <p>ANOS DE OAB</p>
+              <p>ANOS ADVOGANDO</p>
             </div>
             <div className="sub-block-three">
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting 
-                industry. Lorem Ipsum has been the industry's standard dummy text 
-                ever since the 1500s.
+              São anos dedicados a ajudar pessoas na busca pela justiça.
               </p>
             </div>
           </div>
@@ -117,16 +124,15 @@ function LandingPageFunction() {
           <div className="blocks">
             <div className="block-two">
             <div className="sub-block-one">
-              <p>+100</p>
+              <p>+10</p>
             </div>
             <div className="sub-block-two">
-              <p>CLIENTES ATENDIDOS</p>
+              <p>ANOS DE EXPERIÊNCIA</p>
             </div>
             <div className="sub-block-three">
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting 
-                industry. Lorem Ipsum has been the industry's standard dummy text 
-                ever since the 1500s.
+              Com experiência de uma década em gestão administrativa e 
+              integração estratégica de processos jurídicos
               </p>
             </div>
             </div>  
@@ -136,39 +142,43 @@ function LandingPageFunction() {
         {/* Bloco faixa após apresentação */}
         <div className="information-banner">
           <div className="information-banner-text">
-            <p>Banner Texto</p>
+            <p>Áreas de Atuação</p>
           </div>
           <div className="information-banner-blocks">
             <div className="information-banner-block-one">
               <div className="information-banner-title">
-                <p>Lorem Ipsum</p>
+                <p>Pessoa física e jurídica</p>
               </div>
               <div className="information-banner-block-text">
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                Com expertise em defender tanto pessoas físicas quanto jurídicas, 
+                trago comprometimento e habilidade para garantir os direitos e 
+                interesses dos meus clientes perante a justiça.
                 </p>
               </div>
             </div>
             <div className="information-banner-block-two">
               <div className="information-banner-title">
-                <p>Lorem Ipsum</p>
+                <p>Cível e Criminal</p>
               </div>
               <div className="information-banner-block-text">
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                Com vasta experiência na defesa tanto em questões cíveis quanto 
+                criminais, estou preparado para oferecer suporte jurídico eficaz e 
+                estratégico em todas as etapas do processo legal, 
+                garantindo os melhores resultados para meus clientes.
                 </p>
               </div>
             </div>
             <div className="information-banner-block-three">
               <div className="information-banner-title">
-                <p>Lorem Ipsum</p>
+                <p>Direito do Consumidor</p>
               </div>
               <div className="information-banner-block-text">
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                Com foco no cliente e conhecimento abrangente em direito do, 
+                estou preparado para defender seus direitos e garantir uma 
+                resolução justa em qualquer questão relacionada ao consumo.
                 </p>
               </div>
             </div>
@@ -178,35 +188,67 @@ function LandingPageFunction() {
         {/* Bloco sobre o o profissional */}
         <div className="about-me-container">
           <div className="about-me-section">
-            <p>Um pouco sobre mim</p>
+            <p>UM POUCO SOBRE MIM</p>
           </div>
           <div className="about-me-title">
             <p>Quem sou eu?</p>
           </div>
           <div className="about-me-text">
-            <p>Lorem ipsum .........................</p>
+            <p>
+              Profissional com sólida formação em Gestão de Políticas Públicas e Direito, 
+              combinada com uma vasta experiência de dez anos atuando na área administrativa. 
+              Como Advogada, tenho me dedicado nos últimos cinco anos à integração de gestão estratégica 
+              e processos jurídicos, com foco especializado em direito cível, trabalhista e mediação de 
+              conflitos.
+              Minha trajetória inclui uma atuação robusta em escritório contencioso de massa, onde 
+              desenvolvi competências práticas na elaboração de peças processuais, contratos, e na 
+              condução de negociações pré-processuais. Além disso, tenho expertise em atos societários e 
+              estudos de teses, garantindo uma atuação abrangente e eficaz em diversas frentes do direito.
+              Meu compromisso com a justiça vai além do âmbito profissional. Engajo-me ativamente em 
+              causas sociais, como o trabalho voluntário com mulheres em situação de violência doméstica, 
+              por meio da ONG 'As Justiceiras'. Este projeto reflete minha missão enquanto advogada: 
+              disseminar informações para que as pessoas possam tomar decisões conscientes e acessar a 
+              justiça de forma equitativa."
+              </p>
           </div>
           <div className="about-me-blocks">
             <div className="about-me-block-one">
-              <p>frame 1</p>
+              <img src={IconeFaculdade} alt="Ícone de Good Ware" className="imagem-faculdade" href="https://br.freepik.com/search"/>
+              <p className="title">Graduação</p>
+              <p className="name-information">Direito</p>
+              <p className="subtitle">Centro Universitário FMU</p>
+              <p className="duration">2015 - 2019</p>
             </div>
             <div className="about-me-block-two">
-              <p>frame 2</p>
+              <img src={IconeCursos} alt="Icon by Freepik" className="imagem-pos-graduacao" href="https://www.freepik.com/icon/open-book_2702134#fromView=search&page=1&position=0&uuid=eabae85a-d63e-4eab-aef5-3b1574d98550"/>
+              <p>Pós-Graduação</p>
+              <p className="title">Mestrado</p>
+              <p className="name-information">Resolução de Conflitos <br/>e Mediação</p>
+              <p className="subtitle">Fundação Universitária <br/> Iberoamericana - FUNIBER</p>
+              <p className="duration">2020 - 2023</p>
             </div>
             <div className="about-me-block-three">
-                <p>frame 3</p>
+              <img src={IconeBalanca} alt="Ícone de Freepik" className="imagem-cursos" href="https://br.freepik.com/search"/>
+              <p>Profissão</p>
+              <p className="title">Exercendo atualmente</p>
+              <p className="name-information">Advogada autônoma - <br/>Renata Oliveira Advocacia</p>
+              <p className="subtitle">Gerente Juírdico - <br/>Kurama Serviços e <br/>Transportes Ltda. </p>
+              <p className="duration">Advogada - <br/>Febrapo</p>
             </div>
           </div>
         </div>
 
         {/* Bloco informativo */}        
         <div className="second-information-banner">
-          <div className="second-information-banner-text">
-            <p>TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO</p>
+            <div className="second-information-banner-title">
+              <p>VALORES E MISSÃO</p>
+            </div>
+            <div className="seconde-information-banner-mission">
+              <p>"Disseminar informação para que as pessoas tenham a possibilidade de tomar escolhas conscientes."</p>
           </div>
         </div>
-
-        {/* Bloco de opiniões de clientes */}
+        {/*
+         Bloco de opiniões de clientes 
         <div className="customers-say-container">
           <div className="customers-say-title">
             <p>O que os clientes dizem</p>
@@ -222,55 +264,64 @@ function LandingPageFunction() {
               <p>bloco tres</p>
             </div>
           </div>
-        </div>  
+        </div>*/}
 
         {/* Bloco para entrar em contato */}
         <div className="contact-container">
-          <div className="contact-information">
-            <p>ENTRE EM CONTATO</p>
-            <div className="contact-title">
-              <p>TELEFONE</p>
-            </div>
-            <div className="contact-text">
-              <p>TEL: 119999999999</p>
-            </div>
-            <div className="contact-title">
-              <p>EMAIL</p>
-            </div>
-            <div className="contact-text">
-              <p></p>
-            </div>
-          </div>
+  <div className="contact-information">
+    <div className="contact-top">
+      <p>ENTRE EM CONTATO</p>
+    </div>
+    <div className="contact-group">
+      <div className="contact-title">
+        <p>TELEFONE</p>
+      </div>
+      <div className="contact-text">
+        <p>55 (11) 98231-2948</p>
+      </div>
+    </div>
+    <div className="contact-group">
+      <div className="contact-title">
+        <p>EMAIL</p>
+      </div>
+      <div className="contact-text">
+        <p>reoliveirarufino@adv.oabsp.org.br</p>
+      </div>
+    </div>
+  </div>
           <div className="contact-fields">
-          <form ref={form} onSubmit={sendEmail}>
-              <div className="form-group">
-                <label htmlFor="name">Nome:</label>
-                  <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required />
-              </div>
-              <div className="form-group">
-                <label htmlFor="email">Email:</label>
-                  <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required />
-              </div>
-              <div className="form-group">
-                <label htmlFor="message">Mensagem:</label>
-                  <textarea id="message" name="message" value={formData.message} onChange={handleChange} required></textarea>
-              </div>
-              <button type="submit">Enviar</button>
-            </form>
-          </div>
+  <form ref={form} onSubmit={sendEmail}>
+    <div className="form-group">
+      <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required placeholder="Nome" />
+    </div>
+    <div className="form-group">
+      <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required placeholder="Email" />
+    </div>
+    <div className="form-group">
+      <textarea id="message" name="message" value={formData.message} onChange={handleChange} required placeholder="Mensagem"></textarea>
+    </div>
+    <button type="submit">Enviar</button>
+  </form>
+</div>
+
         </div>
         <div className="footer">
           <div className="social-medias">
-            <a href="instagram.com/giinapompeo" target="_blank">
-              <img src={ImagemInstagram} width="50px" alt="Fale conosco pelo Instagram" title=""/>
-            </a>
+              <img src={ImagemInstagram} width="30px" alt="Fale conosco pelo Instagram (Ícone de Pixel perfect)" title="" href="https://www.instagram.com/advocaciarenataoliveira/"/>
+             {/* Icone Instagram -> <a href="https://br.freepik.com/icone/instagram_2111463#fromView=search&page=1&position=0&uuid=eb408666-e14b-4187-b7d9-387f6febfb97">Ícone de Pixel perfect</a>*/}
+              <img src={IconeWhatsApp} width="30px" alt="Fale conosco pelo WhatsApp (Ícone de Grafixpoint)" title="" href="https://wa.me/5511982312948?text=Olá! Gostaria de saber mais informações."/>
+              {/* Icone WhatsApp -> <a href="https://br.freepik.com/icone/social_13051741#fromView=search&page=1&position=21&uuid=b877d762-ab84-4e2d-ab56-feae75f8c88c">Ícone de Grafixpoint</a>*/}
+              <img src={IconeLinkedin} width="30px" alt="Conheça meu Linkedin (Ícone de riajulislam)" title="" href="https://www.linkedin.com/in/reoliveirarufino/"/>
+             {/* Icone Linkedin -> <a href="https://br.freepik.com/icone/linkedin_3536505#fromView=search&page=1&position=11&uuid=1f1bd414-5037-46a8-8ee5-a1a9328815d4">Ícone de riajulislam</a>*/}
           </div>
-          <p>Desenvolvido por Regina Pompeo</p>
+          <p>&copy; 2024 Advogada Renata Oliveira. <br/>Todos os direitos reservados a Regina Pompeo.</p>
+          <p>Ícones by Freepik</p>
         </div>
 
         <div className="WhatsApp">
-          <a href="https://wa.me/5511945292874?text=Olá! Gostaria de saber mais informações." target="_blank">
-          <img src={ImagemWhatsApp} width="45px" alt="Fale conosco pelo WhatsApp" title=""/>
+          <a href="https://wa.me/5511982312948?text=Olá! Gostaria de saber mais informações." target="_blank">
+          <img src={ImagemWhatsApp} width="45px" alt="Fale conosco pelo WhatsApp (Ícone de Fathema Khanom)" title=""/>
+          {/* <a href="https://br.freepik.com/icone/whatsapp_3670051#fromView=search&page=1&position=0&uuid=81b074a2-483d-431e-a61c-70f67708697f">Ícone de Fathema Khanom</a>*/}
           </a>
         </div>
   </div>
