@@ -34,25 +34,19 @@
 /* APRESENTAÇÃO */
 
 .presentation-container{
-  display:flex;
-  justify-content: center;
-  /*background-color:; /* Fundo lilás */
-  justify-content: center;
-  height: 25vw;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  margin: 0px 100px;
 }
 
 .presentation-text {
-  margin-left: 50vw;
-  margin: auto;
-  text-align: left;
- /* background-color: /* Esta cor será aplicada */
-  margin-right: 5vw; 
   transform: translate(-700px);
   opacity: 0;
   max-width: 450px;
   max-height: 450px;
   width: auto;
-
+  text-align: left;
 }
 
   .presentation-text-top {
@@ -77,11 +71,12 @@
 .presentation-image{
   align-items: right;
   display: flex;
-  height: 400px;
-  width: 300px;
+  height: 30vw;
+  width: 1vw;
   transform: translate(700px);
   opacity: 0;
-  padding: 60px 120px;
+  padding-top: 50px;
+  padding-right: 300px;
 
 }
 
@@ -95,7 +90,7 @@
   flex-direction: row;
   display:flex;
   color: white;
-  margin: 4vw;
+  margin: 1vw 4vw;
 }
 .blocks{
   display: flex;
@@ -357,6 +352,7 @@
   font-family: 'Times New Roman', Times, serif;
   color: white;
   position: relative; /* Adiciona posição relativa ao bloco pai */
+  height: 18vw;
 }
 
 .imagem-apostrofo {
@@ -500,7 +496,7 @@ button[type="submit"]:hover {
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
   background-color: black;
-  height: 11vw; /* Define a altura do footer como 100% da viewport height */
+  height: 120px;
   margin-top: 80px;
   padding-top: 30px;
   color: white;
