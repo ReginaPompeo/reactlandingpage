@@ -9,6 +9,7 @@ import IconeLinkedin from '../src/images/Icone-Linkedin.png';
 import IconeFaculdade from '../src/images/Faculdade.png';
 import IconeBalanca from '../src/images/Balanca.png';
 import IconeCursos from '../src/images/Livro.png';
+import Apostrofo from '../src/images/apostrofo.png';
 import emailjs from '@emailjs/browser';
 import {gsap} from 'gsap';
 import {ScrollTrigger} from 'gsap/ScrollTrigger';
@@ -57,7 +58,7 @@ function LandingPageFunction() {
     e.preventDefault();
 
     emailjs
-      .sendForm('gina.celia.pompeo', 'template_bfa6616', form.current, {
+      .sendForm('service_unxaqsf', 'template_bfa6616', form.current, {
         publicKey: 'TvM_YqZ3Kuup5VN1V',
       })
       .then(
@@ -247,24 +248,46 @@ function LandingPageFunction() {
               <p>"Disseminar informação para que as pessoas tenham a possibilidade de tomar escolhas conscientes."</p>
           </div>
         </div>
-        {/*
-         Bloco de opiniões de clientes 
+        
+         {/*Bloco de opiniões de clientes */}
         <div className="customers-say-container">
           <div className="customers-say-title">
             <p>O que os clientes dizem</p>
           </div>
           <div className="customers-say-blocks">
             <div className="customers-block">
-              <p>bloco um</p>
+            <img src={Apostrofo} width="30px" alt="Icon by Icon Mela" className="imagem-apostrofo" href="https://www.freepik.com/icon/quote_7350737#fromView=search&page=1&position=1&uuid=f443d4c8-1302-4ad6-a68f-4a0061b221c7"/>
+              <p>
+                A Dra Renata é extremamente profissional, atenciosa, interessada na resolução dos assuntos, 
+                sempre preocupada com o melhor para seus clientes, se empenhando ao máximo em cada detalhe. 
+                Uma defensora de confiança, que fez a diferença em minha vida.
+              </p>
+              <div className="customers-name">
+                <p>- Suely</p>
+              </div>
             </div>
             <div className="customers-block">
-              <p>bloco dois</p>
+            <img src={Apostrofo} width="30px" alt="Icon by Icon Mela" className="imagem-apostrofo" href="https://www.freepik.com/icon/quote_7350737#fromView=search&page=1&position=1&uuid=f443d4c8-1302-4ad6-a68f-4a0061b221c7"/>
+              <p>
+                Ótima experiência.<br/>
+                Advogado muito competente, atencioso e totalmente qualificado para solucionar meu problema. 
+                Você agora é meu contato de emergência!
+              </p>
+              <div className="customers-name">
+                <p>- Luan</p>
+              </div>
             </div>
             <div className="customers-block">
-              <p>bloco tres</p>
+            <img src={Apostrofo} width="30px" alt="Icon by Icon Mela" className="imagem-apostrofo" href="https://www.freepik.com/icon/quote_7350737#fromView=search&page=1&position=1&uuid=f443d4c8-1302-4ad6-a68f-4a0061b221c7"/>
+              <p>
+                Pontualmente comprometido com o cliente. Sempre recomendo de olhos fechados.
+              </p>
+              <div className="customers-name">
+                <p>- Cynthia</p>
+              </div>
             </div>
           </div>
-        </div>*/}
+        </div>
 
         {/* Bloco para entrar em contato */}
         <div className="contact-container">
@@ -307,11 +330,11 @@ function LandingPageFunction() {
         </div>
         <div className="footer">
           <div className="social-medias">
-              <img src={ImagemInstagram} width="30px" alt="Fale conosco pelo Instagram (Ícone de Pixel perfect)" title="" href="https://www.instagram.com/advocaciarenataoliveira/"/>
+              <img src={ImagemInstagram} width="30px" alt="Fale conosco pelo Instagram (Ícone de Pixel perfect)" title="" href="https://www.instagram.com/advocaciarenataoliveira/" target="_blank"/>
              {/* Icone Instagram -> <a href="https://br.freepik.com/icone/instagram_2111463#fromView=search&page=1&position=0&uuid=eb408666-e14b-4187-b7d9-387f6febfb97">Ícone de Pixel perfect</a>*/}
-              <img src={IconeWhatsApp} width="30px" alt="Fale conosco pelo WhatsApp (Ícone de Grafixpoint)" title="" href="https://wa.me/5511982312948?text=Olá! Gostaria de saber mais informações."/>
+              <img src={IconeWhatsApp} width="30px" alt="Fale conosco pelo WhatsApp (Ícone de Grafixpoint)" title="" href="https://wa.me/5511982312948?text=Olá! Gostaria de saber mais informações." target="_blank"/>
               {/* Icone WhatsApp -> <a href="https://br.freepik.com/icone/social_13051741#fromView=search&page=1&position=21&uuid=b877d762-ab84-4e2d-ab56-feae75f8c88c">Ícone de Grafixpoint</a>*/}
-              <img src={IconeLinkedin} width="30px" alt="Conheça meu Linkedin (Ícone de riajulislam)" title="" href="https://www.linkedin.com/in/reoliveirarufino/"/>
+              <img src={IconeLinkedin} width="30px" alt="Conheça meu Linkedin (Ícone de riajulislam)" title="" href="https://www.linkedin.com/in/reoliveirarufino/" target="_blank"/>
              {/* Icone Linkedin -> <a href="https://br.freepik.com/icone/linkedin_3536505#fromView=search&page=1&position=11&uuid=1f1bd414-5037-46a8-8ee5-a1a9328815d4">Ícone de riajulislam</a>*/}
           </div>
           <p>&copy; 2024 Advogada Renata Oliveira. <br/>Todos os direitos reservados a Regina Pompeo.</p>

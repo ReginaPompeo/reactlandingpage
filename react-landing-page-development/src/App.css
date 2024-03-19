@@ -36,7 +36,7 @@
 .presentation-container{
   display:flex;
   justify-content: center;
-  /*background-color: #1010d6; /* Fundo lilás */
+  /*background-color:; /* Fundo lilás */
   justify-content: center;
   height: 30vw;
 }
@@ -45,7 +45,7 @@
   margin-left: 50vw;
   margin: auto;
   text-align: left;
- /* background-color: green; /* Esta cor será aplicada */
+ /* background-color: /* Esta cor será aplicada */
   margin-right: 5vw; 
   transform: translate(-700px);
   opacity: 0;
@@ -56,7 +56,7 @@
 }
 
   .presentation-text-top {
-    /*background-color: crimson;*/
+    /*background-color:*/
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif; 
     color: black;
@@ -64,7 +64,7 @@
   
 
 .presentation-text-bottom{
-  /*background-color: darkviolet;*/
+  /*background-color:*/
   font-size: 50px;
   font-family: "Newsreader", serif; 
     font-optical-sizing: auto;
@@ -93,7 +93,7 @@
 
 /* BLOCOS */
 .the-block{
-  /*background-color: aquamarine;*/
+  /*background-color:*/
   width: auto;
   height: auto;
   text-align: left;
@@ -137,7 +137,7 @@
 }
 
 .sub-block-one {
-  /*background-color: #FFD700; /* Cor de fundo amarela */
+  /*background-color: /* Cor de fundo amarela */
   font-size: 30px;
   font-family: 'Times New Roman', Times, serif; 
   
@@ -145,13 +145,13 @@
 }
 
 .sub-block-two {
-  /*background-color: #00FF00; /* Cor de fundo verde */
+  /*background-color: /* Cor de fundo verde */
   font-size: 19px;
   font-family: 'Times New Roman', Times, serif; 
 }
 
 .sub-block-three {
-  /*background-color: #0000FF; /* Cor de fundo azul */
+  /*background-color: /* Cor de fundo azul */
   font-size: 17px;
   font-family: 'Lato', sans-serif;
   margin-top: 50px;
@@ -182,7 +182,7 @@
 }
 
 .information-banner-blocks{
-  /*background-color: #00FF00;*/
+  /*background-color:*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -253,16 +253,18 @@
   justify-content: Center; /* Alinha os elementos horizontalmente */
   width: auto;
   text-align: left;
+  color:#69223c;
+  padding-top: 60px;
 }
 
 .about-me-block-one,
 .about-me-block-two,
 .about-me-block-three{
-  background-color: #808080;
+  background-color: white;
   height: auto;
   width: auto;
-  min-width: 250px ;
-  min-height: 390px;
+  min-width: 200px ;
+  min-height: 400px;
   border-radius: 50px;
   display: flex; /* Torna o container um flex container */
   flex-direction:column; /* Define a direção dos itens como vertical */
@@ -316,60 +318,49 @@
   margin: 0; /* Remove a margem padrão */
   /*background-color: lightblue; /* Cor de fundo para o container do título */
   padding: 10px; /* Espaçamento interno */
+  text-align: left;
 }
-
-.customers-say-container {
-  /* Estilos para o container principal */
-  /*background-color: lightcoral; /* Cor de fundo para o container principal */
-  height: 200px;
+.customers-say-title{
+  text-align: left;
+  padding: 10px 50px;
+  font-family: "Newsreader", serif; 
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
 }
-
-.customers-say-title {
-  /* Estilos para o título */
-  /*background-color: black; /* Cor de fundo para o título */
-  padding: 10px; /* Espaçamento interno */
-}
-
 .customers-say-blocks {
-  /* Estilos para o contêiner dos blocos */
-  display: flex;
-  justify-content: space-between; /* Distribui os blocos igualmente */
-  /*background-color: black;*/
-  height: 150px;
-  padding-top: 80px;
+  display: flex; /* Usa flexbox para layout */
+  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+  justify-content: space-between; /* Espaço uniformemente entre os blocos */
 }
 
-.customers-say-block-one {
-  /* Estilos para o primeiro bloco */
-  /*background-color: lightgreen; /* Cor de fundo para o primeiro bloco */
-  padding: 10px; /* Espaçamento interno */
-  height: 300px;
-  width: 200px;
-  margin-right: 15px;
+.customers-block {
+  background-color: #7F7F7F;
+  flex: 0 0 calc(20% - 10px); /* Define a largura dos blocos com espaço entre eles */
+  margin: 0 50px;
+  border-radius: 50px;
+  display: flex; /* Torna o container um flex container */
+  flex-direction:column; /* Define a direção dos itens como vertical */
+  justify-content: Center; /* Alinha os elementos horizontalmente */;
+  padding: 20px;
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+  color:white;
 }
 
-.customers-say-block-two {
-  /* Estilos para o segundo bloco */
-  /*background-color: lightcoral; /* Cor de fundo para o segundo bloco */
-  padding: 10px; /* Espaçamento interno */
-  height: 300px;
-  width: 200px;
-  margin-right: 15px;
+.customers-block p {
+  text-align: left; /* Alinha o texto à esquerda */
 }
 
-.customers-say-block-three {
-  /* Estilos para o terceiro bloco */
-  /*background-color: lightsalmon; /* Cor de fundo para o terceiro bloco */
-  padding: 10px; /* Espaçamento interno */
-  height: 300px;
-  width: 200px;
+.customers-name {
+  text-align: left; /* Alinha o nome do cliente à esquerda */
 }
-.customers-say-block-one,
-.customers-say-block-two,
-.customers-say-block-three {
-  border-radius: 40px; /* Ajuste o valor conforme desejado */
-  margin-left: 40px;
-  margin-right: 40px;
+
+.imagem-apostrofo{
+  align-items: left;
 }
 
 .contact-container {
@@ -496,7 +487,7 @@ button[type="submit"]:hover {
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
   background-color: black;
-  height: 16vh; /* Define a altura do footer como 100% da viewport height */
+  height: 13vw; /* Define a altura do footer como 100% da viewport height */
   margin-top: 80px;
   padding-top: 30px;
   color: white;
@@ -546,14 +537,14 @@ button[type="submit"]:hover {
   /*transform: translate(-700px);
     //opacity: 0;*/
     .presentation-text-top {
-      background-color: crimson;
+      /*background-color: crimson;*/
       font-size: clamp(10px, 2vw, 20px); /* Define um tamanho de fonte entre 12px e 24px, com base no tamanho da viewport */
       
     }
     
   
   .presentation-text-bottom{
-    background-color: darkviolet;
+    /*background-color: darkviolet;*/
     font-size: clamp(18px, 3vw, 30px); /* Define um tamanho de fonte entre 12px e 24px, com base no tamanho da viewport */
   }
   
@@ -567,7 +558,7 @@ button[type="submit"]:hover {
     height: auto;
   }
   .the-block{
-    background-color: aquamarine;
+    /*background-color: aquamarine;*/
     width: 100%;
     height: auto;
     display: flex;
@@ -612,17 +603,17 @@ button[type="submit"]:hover {
   }
   
   .sub-block-one {
-    background-color: #FFD700; /* Cor de fundo amarela */
+   /* background-color: #FFD700; /* Cor de fundo amarela */
     font-size: clamp(20px, 3vw, 25px); /* Define um tamanho de fonte entre 12px e 24px, com base no tamanho da viewport */
   }
   
   .sub-block-two {
-    background-color: #00FF00; /* Cor de fundo verde */
+    /*background-color: #00FF00; /* Cor de fundo verde */
     font-size: clamp(10px, 3vw, 15px); /* Define um tamanho de fonte entre 12px e 24px, com base no tamanho da viewport */
   }
   
   .sub-block-three {
-    background-color: #0000FF; /* Cor de fundo azul */
+   /* background-color: #0000FF; /* Cor de fundo azul */
     font-size: clamp(10px, 3vw, 15px); /* Define um tamanho de fonte entre 12px e 24px, com base no tamanho da viewport */
     margin-top: 30px;
   }
