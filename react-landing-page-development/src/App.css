@@ -38,7 +38,7 @@
   justify-content: center;
   /*background-color:; /* Fundo lilás */
   justify-content: center;
-  height: 30vw;
+  height: 25vw;
 }
 
 .presentation-text {
@@ -77,16 +77,11 @@
 .presentation-image{
   align-items: right;
   display: flex;
-  margin-left: 20vw; 
-  margin-right: 15vw;
-  max-width: 450px;
-  max-height: 450px;
-  max-width: 100%;
-  height: auto;
-  padding-top: 3vw;
-  padding-bottom: 1vw;
+  height: 400px;
+  width: 300px;
   transform: translate(700px);
   opacity: 0;
+  padding: 60px 120px;
 
 }
 
@@ -100,7 +95,7 @@
   flex-direction: row;
   display:flex;
   color: white;
-  margin: 5vw;
+  margin: 4vw;
 }
 .blocks{
   display: flex;
@@ -170,8 +165,8 @@
   width: 100%;
   background-color: #808080;
   padding-bottom: 20px;
-  
-}
+} 
+
 .information-banner-text {
   text-align: left;
   display: flex;
@@ -275,9 +270,15 @@
   padding: 15px;
 }
 
-.about-me-block-one img,
-.about-me-block-two img,
-.about-me-block-three img {
+.initial{
+  font-family: "Newsreader", serif; 
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 22px;
+  color: black;
+  font-weight: bold;
+
 }
 
 .imagem-faculdade,
@@ -287,7 +288,7 @@
   height: 30px;
 }
 
-.title{
+.about-title{
   font-family: "Newsreader", serif; 
   font-optical-sizing: auto;
   font-weight: weight;
@@ -316,9 +317,14 @@
   font-size: 15px;
   text-align: left;
   margin: 0; /* Remove a margem padrão */
-  /*background-color: lightblue; /* Cor de fundo para o container do título */
   padding: 10px; /* Espaçamento interno */
   text-align: left;
+}
+.customers-say-container{
+  background-color: black;
+  height: 300px;
+  margin-bottom: 300px;
+  position: relative; /* Adiciona posição relativa à área pai */
 }
 .customers-say-title{
   text-align: left;
@@ -335,6 +341,7 @@
   display: flex; /* Usa flexbox para layout */
   flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
   justify-content: space-between; /* Espaço uniformemente entre os blocos */
+  margin: 10px 50px;
 }
 
 .customers-block {
@@ -343,13 +350,23 @@
   margin: 0 50px;
   border-radius: 50px;
   display: flex; /* Torna o container um flex container */
-  flex-direction:column; /* Define a direção dos itens como vertical */
-  justify-content: Center; /* Alinha os elementos horizontalmente */;
-  padding: 20px;
+  flex-direction: column; /* Define a direção dos itens como vertical */
+  justify-content: center; /* Alinha os elementos horizontalmente */
+  padding: 40px 20px;
   font-size: 18px;
   font-family: 'Times New Roman', Times, serif;
-  color:white;
+  color: white;
+  position: relative; /* Adiciona posição relativa ao bloco pai */
 }
+
+.imagem-apostrofo {
+  position: absolute; /* Define a posição absoluta */
+  top: 0; /* Posiciona a partir do topo do bloco pai */
+  left: 0; /* Posiciona a partir da borda esquerda do bloco pai */
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
 
 .customers-block p {
   text-align: left; /* Alinha o texto à esquerda */
@@ -359,12 +376,9 @@
   text-align: left; /* Alinha o nome do cliente à esquerda */
 }
 
-.imagem-apostrofo{
-  align-items: left;
-}
 
 .contact-container {
-  margin-top: 350px;
+  margin-top: 100px;
   /*background-color: teal;*/
   display: flex;
   justify-content: center;
@@ -384,7 +398,7 @@
 .contact-top {
   font-size: 20px;
   font-family: 'Times New Roman', Times, serif;
-  color:white;
+  color: black;
 }
 
 .contact-group {
@@ -395,7 +409,6 @@
 .contact-title{
   font-family: 'Times New Roman', Times, serif;
   font-size: 18px;  
-
 }
 
 .contact-text {
@@ -487,7 +500,7 @@ button[type="submit"]:hover {
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
   background-color: black;
-  height: 13vw; /* Define a altura do footer como 100% da viewport height */
+  height: 11vw; /* Define a altura do footer como 100% da viewport height */
   margin-top: 80px;
   padding-top: 30px;
   color: white;

@@ -215,23 +215,24 @@ function LandingPageFunction() {
           <div className="about-me-blocks">
             <div className="about-me-block-one">
               <img src={IconeFaculdade} alt="Ícone de Good Ware" className="imagem-faculdade" href="https://br.freepik.com/search"/>
-              <p className="title">Graduação</p>
+              <p className="initial">Formação</p>
+              <p className="about-title">Graduação</p>
               <p className="name-information">Direito</p>
               <p className="subtitle">Centro Universitário FMU</p>
               <p className="duration">2015 - 2019</p>
             </div>
             <div className="about-me-block-two">
               <img src={IconeCursos} alt="Icon by Freepik" className="imagem-pos-graduacao" href="https://www.freepik.com/icon/open-book_2702134#fromView=search&page=1&position=0&uuid=eabae85a-d63e-4eab-aef5-3b1574d98550"/>
-              <p>Pós-Graduação</p>
-              <p className="title">Mestrado</p>
+              <p className="initial">Pós-Graduação</p>
+              <p className="about-title">Mestrado</p>
               <p className="name-information">Resolução de Conflitos <br/>e Mediação</p>
               <p className="subtitle">Fundação Universitária <br/> Iberoamericana - FUNIBER</p>
               <p className="duration">2020 - 2023</p>
             </div>
             <div className="about-me-block-three">
               <img src={IconeBalanca} alt="Ícone de Freepik" className="imagem-cursos" href="https://br.freepik.com/search"/>
-              <p>Profissão</p>
-              <p className="title">Exercendo atualmente</p>
+              <p className="initial">Profissão</p>
+              <p className="about-title">Exercendo atualmente</p>
               <p className="name-information">Advogada autônoma - <br/>Renata Oliveira Advocacia</p>
               <p className="subtitle">Gerente Juírdico - <br/>Kurama Serviços e <br/>Transportes Ltda. </p>
               <p className="duration">Advogada - <br/>Febrapo</p>
@@ -330,12 +331,18 @@ function LandingPageFunction() {
         </div>
         <div className="footer">
           <div className="social-medias">
-              <img src={ImagemInstagram} width="30px" alt="Fale conosco pelo Instagram (Ícone de Pixel perfect)" title="" href="https://www.instagram.com/advocaciarenataoliveira/" target="_blank"/>
-             {/* Icone Instagram -> <a href="https://br.freepik.com/icone/instagram_2111463#fromView=search&page=1&position=0&uuid=eb408666-e14b-4187-b7d9-387f6febfb97">Ícone de Pixel perfect</a>*/}
-              <img src={IconeWhatsApp} width="30px" alt="Fale conosco pelo WhatsApp (Ícone de Grafixpoint)" title="" href="https://wa.me/5511982312948?text=Olá! Gostaria de saber mais informações." target="_blank"/>
-              {/* Icone WhatsApp -> <a href="https://br.freepik.com/icone/social_13051741#fromView=search&page=1&position=21&uuid=b877d762-ab84-4e2d-ab56-feae75f8c88c">Ícone de Grafixpoint</a>*/}
-              <img src={IconeLinkedin} width="30px" alt="Conheça meu Linkedin (Ícone de riajulislam)" title="" href="https://www.linkedin.com/in/reoliveirarufino/" target="_blank"/>
-             {/* Icone Linkedin -> <a href="https://br.freepik.com/icone/linkedin_3536505#fromView=search&page=1&position=11&uuid=1f1bd414-5037-46a8-8ee5-a1a9328815d4">Ícone de riajulislam</a>*/}
+            <a href="https://www.instagram.com/advocaciarenataoliveira/" target="_blank" rel="noopener noreferrer">
+              <img src={ImagemInstagram} width="30px" alt="Fale conosco pelo Instagram (Ícone de Pixel perfect)" title="" />
+            </a>
+            {/* Icone Instagram -> <a href="https://br.freepik.com/icone/instagram_2111463#fromView=search&page=1&position=0&uuid=eb408666-e14b-4187-b7d9-387f6febfb97">Ícone de Pixel perfect</a>*/}
+            <a href="https://wa.me/5511982312948?text=Olá! Gostaria de saber mais informações." target="_blank" rel="noopener noreferrer">
+              <img src={IconeWhatsApp} width="30px" alt="Fale conosco pelo WhatsApp (Ícone de Grafixpoint)" title="" />
+            </a>
+            {/* Icone WhatsApp -> <a href="https://br.freepik.com/icone/social_13051741#fromView=search&page=1&position=21&uuid=b877d762-ab84-4e2d-ab56-feae75f8c88c">Ícone de Grafixpoint</a>*/}
+            <a href="https://www.linkedin.com/in/reoliveirarufino/" target="_blank" rel="noopener noreferrer">
+              <img src={IconeLinkedin} width="30px" alt="Conheça meu Linkedin (Ícone de riajulislam)" title="" />
+            </a>
+            {/* Icone Linkedin -> <a href="https://br.freepik.com/icone/linkedin_3536505#fromView=search&page=1&position=11&uuid=1f1bd414-5037-46a8-8ee5-a1a9328815d4">Ícone de riajulislam</a>*/}
           </div>
           <p>&copy; 2024 Advogada Renata Oliveira. <br/>Todos os direitos reservados a Regina Pompeo.</p>
           <p>Ícones by Freepik</p>
