@@ -245,7 +245,7 @@
   text-align: left;
   color:#69223c;
   padding-top: 60px;
-}
+  }
 
 .about-me-block-one,
 .about-me-block-two,
@@ -263,6 +263,13 @@
   align-items: center; /* Alinha os itens verticalmente ao centro */
   justify-content: space-between;
   padding: 15px;
+  transition: transform 0.3s ease; /* Adiciona uma transição suave à propriedade transform */
+}
+
+.about-me-block-one:hover,
+.about-me-block-two:hover,
+.about-me-block-three:hover {
+  transform: scale(1.1); /* Ao passar o mouse sobre o elemento, aumenta a escala em 10% */
 }
 
 .initial{
@@ -353,7 +360,13 @@
   color: white;
   position: relative; /* Adiciona posição relativa ao bloco pai */
   height: 18vw;
+  transition: transform 0.3s ease; /* Adiciona uma transição suave à propriedade transform */
 }
+
+.customers-block:hover {
+  transform: scale(1.1); /* Ao passar o mouse sobre o elemento, aumenta a escala em 10% */
+}
+
 
 .imagem-apostrofo {
   position: absolute; /* Define a posição absoluta */
