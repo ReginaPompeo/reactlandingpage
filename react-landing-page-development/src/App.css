@@ -5,7 +5,7 @@
 
 .LandingPage{
   text-align: center;
-  background-color:#69233C;  /* Fundo azul */
+  background-color: RGB(128 128, 128);  /* Fundo azul */
   height: 100vh; /* Define a altura da página como 100% da altura da tela */
   overflow-y: auto; /* Adiciona uma barra de rolagem vertical */
   width: 100%;
@@ -17,7 +17,7 @@
 /* Estilo para o cabeçalho da Landing Page */
 .LandingPage-header {
   display: flex;
-  background-color: black; /* Fundo rosa */
+  background-color: RGB(105, 34, 60);/* Fundo rosa */
   height: 10%; /* Define a altura do cabeçalho como 100 pixels */
   padding-top: 5px; /* Espaço do topo */
   padding-left: 20px; /* Espaço do lado esquerdo */
@@ -89,7 +89,7 @@
   text-align: left;
   flex-direction: row;
   display:flex;
-  color: white;
+  color: black;
   margin: 1vw 4vw;
 }
 .blocks{
@@ -158,7 +158,7 @@
 .information-banner{
   height: auto;
   width: 100%;
-  background-color: #808080;
+  background-color: RGB(105, 34, 60);/* Fundo rosa */
   padding-bottom: 20px;
 } 
 
@@ -168,6 +168,7 @@
   padding-top: 20px;
   padding-left: 50px;
   padding-right: 50px;
+  color: white;
   
 }
 
@@ -176,6 +177,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
 }
 
 
@@ -191,7 +193,7 @@
 .information-banner-title{
   font-family: 'Lato', sans-serif;
   font-size: 18px;
-  color: #69223C;
+  color: white;
   font-weight: bold; /* Deixa a fonte mais gordinha */
 }
 
@@ -323,7 +325,7 @@
   text-align: left;
 }
 .customers-say-container{
-  background-color: black;
+  background-color:RGB(105, 34, 60);/* Fundo rosa */
   height: 300px;
   margin-bottom: 300px;
   position: relative; /* Adiciona posição relativa à área pai */
@@ -347,7 +349,7 @@
 }
 
 .customers-block {
-  background-color: #7F7F7F;
+  background-color: white;
   flex: 0 0 calc(20% - 10px); /* Define a largura dos blocos com espaço entre eles */
   margin: 0 50px;
   border-radius: 50px;
@@ -357,7 +359,7 @@
   padding: 40px 20px;
   font-size: 18px;
   font-family: 'Times New Roman', Times, serif;
-  color: white;
+  color:black;
   position: relative; /* Adiciona posição relativa ao bloco pai */
   height: 18vw;
   transition: transform 0.3s ease; /* Adiciona uma transição suave à propriedade transform */
@@ -388,13 +390,12 @@
 
 .contact-container {
   margin-top: 100px;
-  /*background-color: teal;*/
   display: flex;
   justify-content: center;
 }
 
 .contact-information {
-  background-color: #7F7F7F;
+  background-color:  RGB(105, 34, 60);/* Fundo rosa */
   margin-left: 30px;
   width: 35%;
   text-align: left;
@@ -490,10 +491,10 @@
 
 button[type="submit"] {
   width: 40%;
-  background-color: #69223c;
+  background-color: RGB(105, 34, 60);/* Fundo rosa */
   color: white;
   padding: 10px 20px;
-  border: 2px solid #69223c; /* Adiciona uma borda sólida com a cor #69223c */
+  border: 2px solid RGB(105, 34, 60);/* Fundo rosa */ /* Adiciona uma borda sólida com a cor #69223c */
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease; /* Adiciona transição suave para a cor de fundo e cor do texto */
@@ -501,14 +502,14 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background-color: white; /* Altera a cor de fundo para white quando o mouse passa por cima */
-  color: #69223c; /* Mantém a cor do texto como #69223c quando o mouse passa por cima */
-  border: 2px solid #69223c; /* Adiciona uma borda sólida com a cor #69223c */
+  color: RGB(105, 34, 60);/* Fundo rosa */ /* Mantém a cor do texto como #69223c quando o mouse passa por cima */
+  border: 2px solid RGB(105, 34, 60);/* Fundo rosa */; /* Adiciona uma borda sólida com a cor #69223c */
 }
 
 .footer {
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
-  background-color: black;
+  background-color: RGB(105, 34, 60);/* Fundo rosa */
   height: 120px;
   margin-top: 80px;
   padding-top: 30px;
@@ -528,12 +529,39 @@ button[type="submit"]:hover {
 
 
 
-.WhatsApp{
-  position:fixed;
+.WhatsApp {
+  position: fixed;
   bottom: 20px;
-  right: 30px;
+  left: 30px; /* Posiciona o ícone do WhatsApp à esquerda */
   z-index: 9999;
+  display: flex;
+  align-items: center;
 }
+
+.WhatsApp .message {
+  background-color: #fff; /* Cor de fundo branca */
+  color: #000; /* Cor do texto preto */
+  padding: 10px;
+  border-radius: 20px;
+  margin-left: 10px; /* Espaçamento entre a mensagem e o ícone do WhatsApp */
+  font-size: 14px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+  position: relative; /* Posição relativa para a seta */
+}
+
+.WhatsApp .message .arrow {
+  position: absolute;
+  top: 50%;
+  left: -10px; /* Posiciona a seta à esquerda */
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #fff; /* Triângulo branco */
+}
+
+
 
 @media screen and (min-width: 500px) and (max-width: 980px) {
   .LandingPage-header {

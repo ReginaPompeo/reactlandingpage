@@ -353,6 +353,10 @@ function LandingPageFunction() {
           <img src={ImagemWhatsApp} width="45px" alt="Fale conosco pelo WhatsApp (Ícone de Fathema Khanom)" title=""/>
           {/* <a href="https://br.freepik.com/icone/whatsapp_3670051#fromView=search&page=1&position=0&uuid=81b074a2-483d-431e-a61c-70f67708697f">Ícone de Fathema Khanom</a>*/}
           </a>
+          <div class="message">
+    <span>Entre em contato conosco</span>
+    <div class="arrow"></div>
+  </div>
         </div>
   </div>
  
