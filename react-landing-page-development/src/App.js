@@ -25,7 +25,7 @@ function LandingPageFunction() {
 
     gsap.registerPlugin(ScrollTrigger);
 
-    gsap.to([".presentation-text", ".presentation-image"], {
+    gsap.to([".presentation-texts-container", ".presentation-image"], {
         x: 0,
         opacity: 1,
         duration: 2, // Define a duração da animação como 2 segundos
@@ -145,52 +145,6 @@ function LandingPageFunction() {
     </div>     
 </div>
 
-        {/* Bloco faixa após apresentação */}
-        <div className="information-banner">
-          <div className="information-banner-text">
-            <p>Áreas de Atuação</p>
-          </div>
-          <div className="information-banner-blocks">
-            <div className="information-banner-block-one">
-              <div className="information-banner-title">
-                <p>Pessoa física e jurídica</p>
-              </div>
-              <div className="information-banner-block-text">
-                <p>
-                Com expertise em defender tanto pessoas físicas quanto jurídicas, 
-                trago comprometimento e habilidade para garantir os direitos e 
-                interesses dos meus clientes perante a justiça.
-                </p>
-              </div>
-            </div>
-            <div className="information-banner-block-two">
-              <div className="information-banner-title">
-                <p>Cível e Criminal</p>
-              </div>
-              <div className="information-banner-block-text">
-                <p>
-                Com vasta experiência na defesa tanto em questões cíveis quanto 
-                criminais, estou preparado para oferecer suporte jurídico eficaz e 
-                estratégico em todas as etapas do processo legal, 
-                garantindo os melhores resultados para meus clientes.
-                </p>
-              </div>
-            </div>
-            <div className="information-banner-block-three">
-              <div className="information-banner-title">
-                <p>Direito do Consumidor</p>
-              </div>
-              <div className="information-banner-block-text">
-                <p>
-                Com foco no cliente e conhecimento abrangente em direito do, 
-                estou preparado para defender seus direitos e garantir uma 
-                resolução justa em qualquer questão relacionada ao consumo.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* Bloco sobre o o profissional */}
         <div className="about-me-container">
           <div className="about-me-section">
@@ -244,7 +198,51 @@ function LandingPageFunction() {
             </div>
           </div>
         </div>
-
+{/* Bloco faixa após apresentação */}
+<div className="information-banner">
+          <div className="information-banner-text">
+            <p>Áreas de Atuação</p>
+          </div>
+          <div className="information-banner-blocks">
+            <div className="information-banner-block-one">
+              <div className="information-banner-title">
+                <p>Pessoa física e jurídica</p>
+              </div>
+              <div className="information-banner-block-text">
+                <p>
+                Com expertise em defender tanto pessoas físicas quanto jurídicas, 
+                trago comprometimento e habilidade para garantir os direitos e 
+                interesses dos meus clientes perante a justiça.
+                </p>
+              </div>
+            </div>
+            <div className="information-banner-block-two">
+              <div className="information-banner-title">
+                <p>Cível e Criminal</p>
+              </div>
+              <div className="information-banner-block-text">
+                <p>
+                Com vasta experiência na defesa tanto em questões cíveis quanto 
+                criminais, estou preparado para oferecer suporte jurídico eficaz e 
+                estratégico em todas as etapas do processo legal, 
+                garantindo os melhores resultados para meus clientes.
+                </p>
+              </div>
+            </div>
+            <div className="information-banner-block-three">
+              <div className="information-banner-title">
+                <p>Direito do Consumidor</p>
+              </div>
+              <div className="information-banner-block-text">
+                <p>
+                Com foco no cliente e conhecimento abrangente em direito do, 
+                estou preparado para defender seus direitos e garantir uma 
+                resolução justa em qualquer questão relacionada ao consumo.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
         {/* Bloco informativo */}        
         <div className="second-information-banner">
             <div className="second-information-banner-title">
