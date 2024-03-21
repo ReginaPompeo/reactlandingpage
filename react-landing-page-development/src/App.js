@@ -86,59 +86,64 @@ function LandingPageFunction() {
         <img src={LogoPadrao} alt="Logo" className="rounded-image" />
       </header>
 
-      {/* Temos um container inteiro para a apresentação que ficará na página logo no início */}
-      <div className="presentation-container">
-          {/* Bloco de código para os textos iniciais */}
-          <div className="presentation-text">
-            {/* Texto de cima */}
-            <div className="presentation-text-top">
-            <h2>Olá eu sou</h2>
+      <div class="container-wrapper">
+    <div class="container-left">
+        <div class="presentation-container">
+            <div class="presentation-texts-container">
+                <div class="presentation-text-top">
+                    <h2>Olá eu sou</h2>
+                </div>
+                <div class="presentation-text-bottom">
+                    <p>Renata Oliveira</p>
+                </div>
+                <div class="presentation-text-bottom-two">
+                    <h2>
+                        Técnica em Gestão de Políticas Públicas e
+                        Mestre em Mediação e Resolução de Conflitos
+                    </h2>
+                </div>
             </div>
-            {/* Texto debaixo */}
-            <div className="presentation-text-bottom">
-            <p>Renata Oliveira</p>
             </div>
-          </div>
-          {/* Container da imagem ao lado direito */}
-          <div className="presentation-image">
-            <img src={PresentationImage} alt="Foto Pessoal Renata Oliveira"className="personal-image"/>
-          </div>
+            <div class="blocks color-blocks">
+                <div class="block-one">
+                    <div class="sub-block">
+                        <div class="sub-block-one">
+                            <p>5</p>
+                        </div>
+                        <div class="sub-block-two">
+                            <p>ANOS ADVOGANDO</p>
+                        </div>
+                    </div>
+                    <div class="sub-block-three">
+                        <p>
+                            São anos dedicados a ajudar pessoas na busca pela justiça.
+                        </p>
+                    </div>
+                </div>
+                <div class="block-two">
+                    <div class="sub-block">
+                        <div class="sub-block-one">
+                            <p>+10</p>
+                        </div>
+                        <div class="sub-block-two">
+                            <p>ANOS DE EXPERIÊNCIA</p>
+                        </div>
+                    </div>
+                    <div class="sub-block-three">
+                        <p>
+                            Com experiência de uma década em gestão administrativa e 
+                            integração estratégica de processos jurídicos
+                        </p>
+                    </div>
+            </div>
         </div>
-
-        {/* Bloco na parte debaixo */}
-        <div className="the-block">
-          <div className="blocks">
-            <div className="block-one">
-            <div className="sub-block-one">
-              <p>5</p>
-            </div>
-            <div className="sub-block-two">
-              <p>ANOS ADVOGANDO</p>
-            </div>
-            <div className="sub-block-three">
-              <p>
-              São anos dedicados a ajudar pessoas na busca pela justiça.
-              </p>
-            </div>
-          </div>
-          </div>
-          <div className="blocks">
-            <div className="block-two">
-            <div className="sub-block-one">
-              <p>+10</p>
-            </div>
-            <div className="sub-block-two">
-              <p>ANOS DE EXPERIÊNCIA</p>
-            </div>
-            <div className="sub-block-three">
-              <p>
-              Com experiência de uma década em gestão administrativa e 
-              integração estratégica de processos jurídicos
-              </p>
-            </div>
-            </div>  
-          </div>
+    </div>
+    <div class="container-right">
+        <div class="presentation-image">
+            <img src={PresentationImage} alt="Foto Pessoal Renata Oliveira" class="personal-image"/>
         </div>
+    </div>     
+</div>
 
         {/* Bloco faixa após apresentação */}
         <div className="information-banner">

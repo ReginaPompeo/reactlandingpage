@@ -1,8 +1,7 @@
-/* App.css */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-
+/* Área Total da Landing Page*/
 .LandingPage{
   text-align: center;
   background-color: RGB(128 128, 128);  /* Fundo azul */
@@ -13,8 +12,6 @@
 
 
 /* HEADER */
-
-/* Estilo para o cabeçalho da Landing Page */
 .LandingPage-header {
   display: flex;
   background-color: RGB(105, 34, 60);/* Fundo rosa */
@@ -29,6 +26,63 @@
   display: flex;
   border-radius: 500px; /* ou outro valor, dependendo do quanto deseja arredondar */
 }
+
+/*CONTAINER PÁGINA PRINCIPAL*/
+
+.container-wrapper {
+  display: flex;
+}
+
+.container-left {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: lightcoral;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-right {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.presentation-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.blocks {
+  
+}
+.presentation-texts-container{
+  padding-bottom: 50px;
+}
+.color-blocks {
+  background-color: #f0f0f0;
+}
+
+.color-text {
+  color: #333;
+}
+
+.sub-block {
+  display: flex;
+  align-items: center;
+}
+
+.sub-block p {
+  margin: 0;
+  padding-right: 10px;
+}
+
 
 
 /* APRESENTAÇÃO */
@@ -51,7 +105,7 @@
 
   .presentation-text-top {
     /*background-color:*/
-    font-size: 20px;
+    font-size: 10px;
     font-family: 'Times New Roman', Times, serif; 
     color: black;
   }
@@ -68,6 +122,9 @@
 
 }
 
+.presentation-text-bottom-two h2{
+  font-size: 16px;
+}
 .presentation-image{
   align-items: right;
   display: flex;
@@ -84,18 +141,16 @@
 /* BLOCOS */
 .the-block{
   /*background-color:*/
-  width: auto;
+  /*width: auto;
   height: auto;
   text-align: left;
   flex-direction: row;
   display:flex;
-  color: black;
-  margin: 1vw 4vw;
+  color: black;*/
 }
 .blocks{
   display: flex;
-  width: 350px;
-  margin-left: 60px;
+
 }
 
 .block-one{
@@ -144,14 +199,13 @@
   /*background-color: /* Cor de fundo azul */
   font-size: 17px;
   font-family: 'Lato', sans-serif;
-  margin-top: 50px;
 }
 
 /*text-align: justify;   - CÓDIO PARA CASO O TEXTO SEJA JUSTIFICADO*/
 
 .sub-block-one,
 .sub-block-two {
-  margin-bottom: -30px; /* Reduza este valor conforme desejado */
+  
 }
 /* BANNER DE INFORMAÇÕES */
 
