@@ -1,4 +1,4 @@
-import React, { useRef, useState, useLayoutEffect, Motion } from 'react';
+import React, { useRef, useState} from 'react';
 import './App.css';
 import LogoPadrao from '../src/images/LogoPadrao.jpeg';
 import PresentationImage from '../src/images/FotoPessoal.jpg';
@@ -11,8 +11,7 @@ import IconeBalanca from '../src/images/Balanca.png';
 import IconeCursos from '../src/images/Livro.png';
 import Apostrofo from '../src/images/apostrofo.png';
 import emailjs from '@emailjs/browser';
-import {gsap} from 'gsap';
-import {ScrollTrigger} from 'gsap/ScrollTrigger';
+import { Slide, Fade } from "react-awesome-reveal";
 
 function LandingPageFunction() {
 
@@ -20,22 +19,6 @@ function LandingPageFunction() {
   linkElement.rel = 'stylesheet';
   linkElement.href = 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap';
   document.head.appendChild(linkElement);
-
-  useLayoutEffect(() => {
-
-    gsap.registerPlugin(ScrollTrigger);
-
-    gsap.to([".presentation-texts-container", ".presentation-image"], {
-        x: 0,
-        opacity: 1,
-        duration: 2, // Define a duração da animação como 2 segundos
-    });
-
-    return () => {
-        gsap.killTweensOf([".presentation-container"])
-    }
-}, []);
-
 
   const form = useRef();
   const [formData, setFormData] = useState({
@@ -51,7 +34,6 @@ function LandingPageFunction() {
       [name]: value
     });
   };
-
 
   const sendEmail = (e) => {
  
@@ -85,8 +67,9 @@ function LandingPageFunction() {
         {/* A logo no canto superior esquerdo dentro da barra (header) */}
         <img src={LogoPadrao} alt="Logo" className="rounded-image" />
       </header>
-
+      
       <div class="container-wrapper">
+      <Slide direction="left" delay={1}>
     <div class="container-left">
         <div class="presentation-container">
             <div class="presentation-texts-container">
@@ -138,22 +121,30 @@ function LandingPageFunction() {
             </div>
         </div>
     </div>
+    </Slide>
+    <Slide direction="right" delay={1}>
     <div class="container-right">
         <div class="presentation-image">
             <img src={PresentationImage} alt="Foto Pessoal Renata Oliveira" class="personal-image"/>
         </div>
-    </div>     
+    </div>  
+    </Slide>   
 </div>
 
         {/* Bloco sobre o o profissional */}
         <div className="about-me-container">
           <div className="about-me-section">
+          <Slide direction="left">
             <p>UM POUCO SOBRE MIM</p>
+            </Slide>
           </div>
           <div className="about-me-title">
+          <Slide direction="left">
             <p>Quem sou eu?</p>
+            </Slide>
           </div>
           <div className="about-me-text">
+          <Slide direction="left">
             <p>
               Profissional com sólida formação em Gestão de Políticas Públicas e Direito, 
               combinada com uma vasta experiência de dez anos atuando na área administrativa. 
@@ -168,9 +159,12 @@ function LandingPageFunction() {
               causas sociais, como o trabalho voluntário com mulheres em situação de violência doméstica, 
               por meio da ONG 'As Justiceiras'. Este projeto reflete minha missão enquanto advogada: 
               disseminar informações para que as pessoas possam tomar decisões conscientes e acessar a 
-              justiça de forma equitativa."
+              justiça de forma equitativa.
               </p>
+              </Slide>
           </div>
+          <Fade>
+          <Slide direction="up">
           <div className="about-me-blocks">
             <div className="about-me-block-one">
               <img src={IconeFaculdade} alt="Ícone de Good Ware" className="imagem-faculdade" href="https://br.freepik.com/search"/>
@@ -197,13 +191,18 @@ function LandingPageFunction() {
               <p className="duration">Advogada - <br/>Febrapo</p>
             </div>
           </div>
+          </Slide>
+          </Fade>
         </div>
 {/* Bloco faixa após apresentação */}
 <div className="information-banner">
           <div className="information-banner-text">
+          <Slide direction="left">
             <p>Áreas de Atuação</p>
+          </Slide>
           </div>
           <div className="information-banner-blocks">
+          <Slide direction="left">
             <div className="information-banner-block-one">
               <div className="information-banner-title">
                 <p>Pessoa física e jurídica</p>
@@ -216,6 +215,8 @@ function LandingPageFunction() {
                 </p>
               </div>
             </div>
+            </Slide>
+            <Slide direction="up">
             <div className="information-banner-block-two">
               <div className="information-banner-title">
                 <p>Cível e Criminal</p>
@@ -223,24 +224,27 @@ function LandingPageFunction() {
               <div className="information-banner-block-text">
                 <p>
                 Com vasta experiência na defesa tanto em questões cíveis quanto 
-                criminais, estou preparado para oferecer suporte jurídico eficaz e 
+                criminais, estou preparada para oferecer suporte jurídico eficaz e 
                 estratégico em todas as etapas do processo legal, 
                 garantindo os melhores resultados para meus clientes.
                 </p>
               </div>
             </div>
+            </Slide>
+            <Slide direction="right">
             <div className="information-banner-block-three">
               <div className="information-banner-title">
                 <p>Direito do Consumidor</p>
               </div>
               <div className="information-banner-block-text">
                 <p>
-                Com foco no cliente e conhecimento abrangente em direito do, 
-                estou preparado para defender seus direitos e garantir uma 
+                Com foco no cliente e conhecimento abrangente em direito, 
+                estou preparada para defender seus direitos e garantir uma 
                 resolução justa em qualquer questão relacionada ao consumo.
                 </p>
               </div>
             </div>
+            </Slide>
           </div>
         </div>
         {/* Bloco informativo */}        
@@ -249,12 +253,15 @@ function LandingPageFunction() {
               <p>VALORES E MISSÃO</p>
             </div>
             <div className="seconde-information-banner-mission">
+              <Slide direction="up">
               <p>"Disseminar informação para que as pessoas tenham a possibilidade de tomar escolhas conscientes."</p>
+              </Slide>
           </div>
         </div>
         
          {/*Bloco de opiniões de clientes */}
         <div className="customers-say-container">
+        <Slide direction="right">
           <div className="customers-say-title">
             <p>O que os clientes dizem</p>
           </div>
@@ -274,7 +281,7 @@ function LandingPageFunction() {
             <img src={Apostrofo} width="30px" alt="Icon by Icon Mela" className="imagem-apostrofo" href="https://www.freepik.com/icon/quote_7350737#fromView=search&page=1&position=1&uuid=f443d4c8-1302-4ad6-a68f-4a0061b221c7"/>
               <p>
                 Ótima experiência.<br/>
-                Advogado muito competente, atencioso e totalmente qualificado para solucionar meu problema. 
+                Advogada muito competente, atenciosa e totalmente qualificada para solucionar meu problema. 
                 Você agora é meu contato de emergência!
               </p>
               <div className="customers-name">
@@ -284,39 +291,42 @@ function LandingPageFunction() {
             <div className="customers-block">
             <img src={Apostrofo} width="30px" alt="Icon by Icon Mela" className="imagem-apostrofo" href="https://www.freepik.com/icon/quote_7350737#fromView=search&page=1&position=1&uuid=f443d4c8-1302-4ad6-a68f-4a0061b221c7"/>
               <p>
-                Pontualmente comprometido com o cliente. Sempre recomendo de olhos fechados.
+                Pontualmente comprometida com o cliente. Sempre recomendo de olhos fechados.
               </p>
               <div className="customers-name">
                 <p>- Cynthia</p>
               </div>
             </div>
           </div>
+          </Slide>
         </div>
 
         {/* Bloco para entrar em contato */}
         <div className="contact-container">
   <div className="contact-information">
     <div className="contact-top">
-      <p>ENTRE EM CONTATO</p>
+    <Slide direction="left" delay={1}>
+      <p>Entre em contato</p>
+    </Slide>
     </div>
     <div className="contact-group">
       <div className="contact-title">
-        <p>TELEFONE</p>
-      </div>
-      <div className="contact-text">
-        <p>55 (11) 98231-2948</p>
+      <Slide>
+        <p>Telefone: +55 11 98231-2948</p>
+        </Slide>
       </div>
     </div>
     <div className="contact-group">
       <div className="contact-title">
-        <p>EMAIL</p>
-      </div>
-      <div className="contact-text">
-        <p>reoliveirarufino@adv.oabsp.org.br</p>
+        <Slide>
+        <p>E-mail: reoliveirarufino@adv.oabsp.org.br</p>
+        </Slide>
       </div>
     </div>
   </div>
-          <div className="contact-fields">
+  <div className="contact-fields">
+  <Slide direction="right">
+    <h2 className="contact-help" >Como posso te ajudar?</h2>
   <form ref={form} onSubmit={sendEmail}>
     <div className="form-group">
       <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required placeholder="Nome" />
@@ -329,6 +339,7 @@ function LandingPageFunction() {
     </div>
     <button type="submit">Enviar</button>
   </form>
+  </Slide>
 </div>
 
         </div>
@@ -347,7 +358,7 @@ function LandingPageFunction() {
             </a>
             {/* Icone Linkedin -> <a href="https://br.freepik.com/icone/linkedin_3536505#fromView=search&page=1&position=11&uuid=1f1bd414-5037-46a8-8ee5-a1a9328815d4">Ícone de riajulislam</a>*/}
           </div>
-          <p>&copy; 2024 Advogada Renata Oliveira. <br/>Todos os direitos reservados a Regina Pompeo.</p>
+          <p className="footer-text">&copy; 2024 Advogada Renata Oliveira. <br/>Todos os direitos reservados a Regina Pompeo.</p>
           <p>Ícones by Freepik</p>
         </div>
 
@@ -356,10 +367,6 @@ function LandingPageFunction() {
           <img src={ImagemWhatsApp} width="45px" alt="Fale conosco pelo WhatsApp (Ícone de Fathema Khanom)" title=""/>
           {/* <a href="https://br.freepik.com/icone/whatsapp_3670051#fromView=search&page=1&position=0&uuid=81b074a2-483d-431e-a61c-70f67708697f">Ícone de Fathema Khanom</a>*/}
           </a>
-          <div class="message">
-    <span>Entre em contato conosco</span>
-    <div class="arrow"></div>
-  </div>
         </div>
   </div>
  

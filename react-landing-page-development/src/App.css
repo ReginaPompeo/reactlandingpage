@@ -4,7 +4,7 @@
 /* Área Total da Landing Page*/
 .LandingPage{
   text-align: center;
-  background-color: RGB(128 128, 128);  /* Fundo azul */
+  background-color: rgb(180, 180, 180);  /* Fundo azul */
   height: 100vh; /* Define a altura da página como 100% da altura da tela */
   overflow-y: auto; /* Adiciona uma barra de rolagem vertical */
   width: 100%;
@@ -35,7 +35,6 @@
 
 .container-left {
   width: 50%;
-  padding: 20px;
   box-sizing: border-box;
   /*background-color: lightcoral;*/
   display: flex;
@@ -44,6 +43,7 @@
   justify-content: center;
   text-align: left;
   justify-content: space-between;
+  padding: 20px 0;
 }
 
 .container-right {
@@ -70,14 +70,13 @@ text-align: left;
   flex-direction: column;
   text-align: left;
   /*background-color: aquamarine;*/
-  transform: translate(-700px);
-  opacity: 0;
-  
 }
 .color-blocks {
   /*background-color: #f0f0f0;*/
   text-align: left;
-  margin: 0 3vw;
+  margin: 2vw 3vw;
+  padding-top: 5vw;
+
 }
 
 .color-text {
@@ -85,7 +84,8 @@ text-align: left;
 }
 .block-one,
 .block-two{
-  padding: 4vw 3vw;
+  padding: 0 3vw;
+  width: 50%;
 }
 .block-one .sub-block,
 .block-two .sub-block{
@@ -114,8 +114,6 @@ padding-bottom: 10px;
 }
 
 .presentation-text {
-  transform: translate(-700px);
-  opacity: 0;
   max-width: 450px;
   max-height: 450px;
   width: auto;
@@ -140,12 +138,14 @@ padding-bottom: 10px;
   font-family: "Nanum Myeongjo", serif;
   font-weight: 800;
   font-style: normal;
+  color:#69223c
 }
 
 .presentation-text-bottom-two h2{
   font-size: 20px;
-  font-family: "Nanum Myeongjo", serif;
-  font-weight: 800;
+  font-family: "Arimo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
   font-style: normal;
 }
 .presentation-image{
@@ -153,10 +153,8 @@ padding-bottom: 10px;
   display: flex;
   height: 35vw;
   width: 50%;
-  transform: translate(700px);
-  opacity: 0;
   justify-content: center;
-  padding: 20px 0;
+  padding: 20px ;
 }
 
 
@@ -175,33 +173,6 @@ padding-bottom: 10px;
 
 }
 
-.block-one{
-  opacity: 0; /* Inicialmente, definimos a opacidade como 0 para tornar o elemento invisível */
-  animation: fadeIn 3.5s ease-in-out forwards; /* Defina a animação de entrada com uma duração de 2 segundos */
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0; /* A partir do estado inicial, com opacidade 0 */
-  }
-  to {
-    opacity: 1; /* Até o estado final, com opacidade 1 */
-  }
-}
-
-.block-two{
-  opacity: 0; /* Inicialmente, definimos a opacidade como 0 para tornar o elemento invisível */
-  animation: fadeIn 4.5s ease-in-out forwards; /* Defina a animação de entrada com uma duração de 2 segundos */
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0; /* A partir do estado inicial, com opacidade 0 */
-  }
-  to {
-    opacity: 1; /* Até o estado final, com opacidade 1 */
-  }
-}
 
 .sub-block-one {
   /*background-color: /* Cor de fundo amarela */
@@ -224,7 +195,7 @@ padding-bottom: 10px;
   font-size: 18px;
   font-family: "Arimo", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: weight;
   font-style: normal;
 }
 
@@ -248,7 +219,15 @@ padding-bottom: 10px;
   text-align: left;
   display: flex;
   color: white;
-  padding: 0 20px;
+  padding: 0 30px;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 800;
+  font-style: normal;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 25px;
+  
 }
 
 .information-banner-blocks{
@@ -266,20 +245,27 @@ padding-bottom: 10px;
 .information-banner-block-three {
   /*background-color: #ADD8E6; /* Light Blue */
   text-align: left;
-  padding: 0 20px;
+  padding: 0 30px;
 }
 
 .information-banner-title{
-  font-family: 'Lato', sans-serif;
-  font-size: 18px;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 800;
+  font-style: normal;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 20px;
   color: white;
   font-weight: bold; /* Deixa a fonte mais gordinha */
 }
 
-.information-banner-block-text,
-.information-banner-text{
-  font-family: 'Roboto', sans-serif;
-  font-size: 15px;
+.information-banner-block-text{
+  font-family: "Arimo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 18px;
 }
 
 /* ABOUT ME */
@@ -293,9 +279,9 @@ padding-bottom: 10px;
 .about-me-section{
  /* background-color: #0000FF;*/
  font-family: "Nanum Myeongjo", serif;
- font-weight: 400;
+ font-weight: 800;
  font-style: normal;
-  font-size: 15px;
+  font-size: 20px;
   color: white;
 }
 
@@ -304,10 +290,10 @@ padding-bottom: 10px;
 .about-me-title{
   /*background-color: #FFD700;*/
   font-family: "Nanum Myeongjo", serif;
-  font-weight: 400;
+  font-weight: 800;
   font-style: normal;
-  color:#000;
-  font-size: 50px;
+  color:#69223c;
+  font-size: 25px;
 }
 
 .about-me-text{
@@ -315,8 +301,10 @@ padding-bottom: 10px;
   color: white;
   font-family: "Arimo", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: weight;
   font-style: normal;
+  font-size: 18px;
+  text-align: justify;
 }
 
 .about-me-blocks{
@@ -362,7 +350,7 @@ padding-bottom: 10px;
   font-style: normal;
   font-size: 22px;
   color: #69223c;
-
+  
 }
 
 .imagem-faculdade,
@@ -373,53 +361,67 @@ padding-bottom: 10px;
 }
 
 .about-title{
-  font-family: "Newsreader", serif; 
+  font-family: "Arimo", sans-serif;
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
   font-size: 20px;
+  color: black;
 }
 .name-information,
 .subtitle,
 .duration{
+  font-family: "Arimo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
   font-size: 18px;
-  font-family: 'Times New Roman', Times, serif; 
+  color: black;
 
 }
 .second-information-banner {
   display: flex;
   flex-direction: column;
-  background-color:lightgray; /* Cor de fundo para o container pai */
+  background-color: rgb(128, 128, 128);
   margin: 5vw;
   font-size: 25px; /* Tamanho da fonte */
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Arimo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
   padding-bottom: 2vw;
+  color: #69223C;
 }
 
+
 .second-information-banner-title {
-  font-family: 'Roboto', sans-serif;
-  font-size: 15px;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 20px;
+  padding: 15px; /* Espaçamento interno */
   text-align: left;
-  margin: 0; /* Remove a margem padrão */
-  padding: 10px; /* Espaçamento interno */
-  text-align: left;
+  color:white;
 }
 .customers-say-container{
   background-color:RGB(105, 34, 60);/* Fundo rosa */
   height: 300px;
   margin-bottom: 300px;
   position: relative; /* Adiciona posição relativa à área pai */
+  padding: 2vw 4vw;  
 }
 .customers-say-title{
   text-align: left;
-  padding: 10px 50px;
-  font-family: "Newsreader", serif; 
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 800;
+  font-style: normal;
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
   font-size: 25px;
   color: white;
   font-weight: bold;
+  padding: 20px;
 }
 .customers-say-blocks {
   display: flex; /* Usa flexbox para layout */
@@ -436,13 +438,15 @@ padding-bottom: 10px;
   display: flex; /* Torna o container um flex container */
   flex-direction: column; /* Define a direção dos itens como vertical */
   justify-content: center; /* Alinha os elementos horizontalmente */
-  padding: 40px 20px;
+  padding: 55px 20px;
   font-size: 18px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Arimo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
   color:black;
   position: relative; /* Adiciona posição relativa ao bloco pai */
   height: 18vw;
-  transition: transform 0.3s ease; /* Adiciona uma transição suave à propriedade transform */
 }
 
 .customers-block:hover {
@@ -456,6 +460,7 @@ padding-bottom: 10px;
   left: 0; /* Posiciona a partir da borda esquerda do bloco pai */
   padding-left: 20px;
   padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 
@@ -472,6 +477,7 @@ padding-bottom: 10px;
   margin-top: 100px;
   display: flex;
   justify-content: center;
+  margin: 2vw 4vw; 
 }
 
 .contact-information {
@@ -486,9 +492,14 @@ padding-bottom: 10px;
 }
 
 .contact-top {
-  font-size: 20px;
-  font-family: 'Times New Roman', Times, serif;
-  color: black;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 800;
+  font-style: normal;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 25px;
+  color: white;
 }
 
 .contact-group {
@@ -496,10 +507,6 @@ padding-bottom: 10px;
   flex-direction: column;
 }
 
-.contact-title{
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 18px;  
-}
 
 .contact-text {
   font-family: 'Roboto', sans-serif;
@@ -513,7 +520,29 @@ padding-bottom: 10px;
   margin-right: 30px;  
   width: 65%;
   padding-left: 20px;
-  
+  padding-bottom: 20px;
+}
+
+.contact-title{
+  font-family: "Arimo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 18px;
+
+}
+
+
+.contact-help{
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 800;
+  font-style: normal;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 25px;
+  color:#69223c;
+  padding-bottom: 10px;
 }
 
 .contact-information,
@@ -537,24 +566,30 @@ padding-bottom: 10px;
   width: 40%;
   padding: 8px;
   border: none;
-  border-bottom: 2px solid black; /* Adiciona a linha preta embaixo */
+  border-bottom: 3px solid #69223c; /* Adiciona a linha preta embaixo */
   box-sizing: border-box;
   transition: border-bottom-color 0.3s ease; /* Adiciona uma transição suave */
   font-size: 15px;
-  font-family: 'Times New Roman', Times, serif; 
+  font-family: "Arimo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
 }
 
 .form-group textarea {
   width: 40%;
   padding: 5px;
   border: none;
-  border-bottom: 2px solid black; /* Adiciona a linha preta embaixo */
+  border-bottom: 3px solid #69223c; /* Adiciona a linha preta embaixo */
   box-sizing: border-box;
   transition: border-bottom-color 0.3s ease; /* Adiciona uma transição suave */
   resize: vertical; /* Permite redimensionamento vertical */
   position: relative; /* Torna a posição relativa para posicionamento personalizado */
   font-size: 15px;
-  font-family: 'Times New Roman', Times, serif; 
+  font-family: "Arimo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
 }
 
 /* Alinha o placeholder com a linha inferior do campo */
@@ -566,6 +601,7 @@ padding-bottom: 10px;
 .form-group input[type="email"]:focus,
 .form-group textarea:focus {
   outline: none;
+  border-bottom: 3px solid blue;
   border-bottom-color: blue; /* Altera a cor da linha quando o campo está em foco */
 }
 
@@ -587,16 +623,21 @@ button[type="submit"]:hover {
 }
 
 .footer {
-  font-family: 'Roboto', sans-serif;
-  font-size: 15px;
   background-color: RGB(105, 34, 60);/* Fundo rosa */
   height: 120px;
   margin-top: 80px;
   padding-top: 30px;
   color: white;
+  padding-bottom: 20px;
 }
 
-
+.footer-text{
+  font-size: 15px;
+  font-family: "Arimo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
 .social-medias {
   display: flex;
   justify-content: center; /* Alinha os elementos horizontalmente */
@@ -611,35 +652,13 @@ button[type="submit"]:hover {
 
 .WhatsApp {
   position: fixed;
-  bottom: 20px;
-  left: 30px; /* Posiciona o ícone do WhatsApp à esquerda */
+  bottom: 30px;
+  right: 30px; /* Posiciona o ícone do WhatsApp à esquerda */
   z-index: 9999;
   display: flex;
   align-items: center;
 }
 
-.WhatsApp .message {
-  background-color: #fff; /* Cor de fundo branca */
-  color: #000; /* Cor do texto preto */
-  padding: 10px;
-  border-radius: 20px;
-  margin-left: 10px; /* Espaçamento entre a mensagem e o ícone do WhatsApp */
-  font-size: 14px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
-  position: relative; /* Posição relativa para a seta */
-}
-
-.WhatsApp .message .arrow {
-  position: absolute;
-  top: 50%;
-  left: -10px; /* Posiciona a seta à esquerda */
-  transform: translateY(-50%);
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-right: 10px solid #fff; /* Triângulo branco */
-}
 
 
 
@@ -648,12 +667,6 @@ button[type="submit"]:hover {
     height: 5%; /* Define a altura do cabeçalho como 100 pixels */
   }
   
-  .LandingPage-header .rounded-image {
-  
-  }
-  .presentation-container{
-
-  }
   
   .presentation-text {
     max-width: 450px;
