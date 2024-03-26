@@ -4,7 +4,7 @@
 /* Área Total da Landing Page*/
 .LandingPage{
   text-align: center;
-  background-color: rgb(180, 180, 180);  /* Fundo azul */
+  background-color: rgb(128, 128, 128);  /* Fundo azul */
   height: 100vh; /* Define a altura da página como 100% da altura da tela */
   overflow-y: auto; /* Adiciona uma barra de rolagem vertical */
   width: 100%;
@@ -43,7 +43,6 @@
   justify-content: center;
   text-align: left;
   justify-content: space-between;
-  padding: 20px 0;
 }
 
 .container-right {
@@ -59,33 +58,27 @@
 .presentation-container {
   display: flex;
   flex-direction: column;
+  margin: 2vw 5vw;
 }
 
-.blocks {
+.blocks-color-blocks {
 text-align: left;
 /*background-color: aquamarine;*/
-  
+color: white;
+display: flex;
+margin: 3vw 5vw;  
+text-align: justify;
 }
 .presentation-texts-container{
   flex-direction: column;
   text-align: left;
   /*background-color: aquamarine;*/
 }
-.color-blocks {
-  /*background-color: #f0f0f0;*/
-  text-align: left;
-  margin: 2vw 3vw;
-  padding-top: 5vw;
 
-}
-
-.color-text {
-  color: #333;
-}
 .block-one,
 .block-two{
-  padding: 0 3vw;
   width: 50%;
+  padding-right: 5vw;
 }
 .block-one .sub-block,
 .block-two .sub-block{
@@ -108,9 +101,10 @@ padding-bottom: 10px;
 
 .presentation-container{
   display: flex;
-  align-items: center;
+  align-items: left;
   justify-content:space-around;
-  margin: 0px 100px;
+  color: white;
+  text-align: justify;
 }
 
 .presentation-text {
@@ -168,10 +162,6 @@ padding-bottom: 10px;
   display:flex;
   color: black;*/
 }
-.blocks{
-  display: flex;
-
-}
 
 
 .sub-block-one {
@@ -226,7 +216,7 @@ padding-bottom: 10px;
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
-  font-size: 25px;
+  font-size: 20px;
   
 }
 
@@ -245,7 +235,8 @@ padding-bottom: 10px;
 .information-banner-block-three {
   /*background-color: #ADD8E6; /* Light Blue */
   text-align: left;
-  padding: 0 30px;
+  padding: 0 2vw;
+  text-align: justify;
 }
 
 .information-banner-title{
@@ -282,7 +273,7 @@ padding-bottom: 10px;
  font-weight: 800;
  font-style: normal;
   font-size: 20px;
-  color: white;
+  color:#69223C;
 }
 
 
@@ -324,18 +315,18 @@ padding-bottom: 10px;
 .about-me-block-three{
   background-color: white;
   height: auto;
-  width: auto;
-  min-width: 210px ;
-  min-height: 420px;
+  width: 20%;
+  min-width: 20vw ;
+  min-height: 15vw;
   border-radius: 50px;
   display: flex; /* Torna o container um flex container */
   flex-direction:column; /* Define a direção dos itens como vertical */
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 4vw;
+  margin-right: 4vw;
   align-items: center; /* Alinha os itens verticalmente ao centro */
-  justify-content: space-between;
-  padding: 15px;
+  padding: 2vw;
   transition: transform 0.3s ease; /* Adiciona uma transição suave à propriedade transform */
+  text-align: left;
 }
 
 .about-me-block-one:hover,
@@ -358,6 +349,7 @@ padding-bottom: 10px;
 .imagem-cursos {
   width: 40px;
   height: 30px;
+  padding: 1vw 0;
 }
 
 .about-title{
@@ -365,7 +357,8 @@ padding-bottom: 10px;
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
-  font-size: 20px;
+  font-size: 18px;
+  text-align: justify;
   color: black;
 }
 .name-information,
@@ -382,15 +375,13 @@ padding-bottom: 10px;
 .second-information-banner {
   display: flex;
   flex-direction: column;
-  background-color: rgb(128, 128, 128);
-  margin: 5vw;
   font-size: 25px; /* Tamanho da fonte */
   font-family: "Arimo", sans-serif;
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
-  padding-bottom: 2vw;
   color: #69223C;
+  
 }
 
 
@@ -399,9 +390,50 @@ padding-bottom: 10px;
   font-weight: 800;
   font-style: normal;
   font-size: 20px;
-  padding: 15px; /* Espaçamento interno */
   text-align: left;
   color:white;
+
+}
+
+.second-information-banner-title-two{
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 20px;
+  text-align: right;
+  color:white;
+}
+.seconde-information-banner-mission{
+  width: 50%;
+}
+.second-information-block-one,
+.second-information-block-three {
+        flex: 1;
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        text-align: justify;
+        width: 70%;
+}
+
+.second-information-block-two{
+        flex: 1;
+        display: flex;
+        flex-direction:row-reverse;
+        align-items: center;
+        text-align: justify;
+        justify-content:  space-between;
+        width: 70%;
+}
+
+.image-container-banner{
+width: 50%;
+}
+
+.image-container-banner img{
+  height: 15vw;
+  width: 60%;
+  border-radius: 150px;
 }
 .customers-say-container{
   background-color:RGB(105, 34, 60);/* Fundo rosa */

@@ -10,6 +10,9 @@ import IconeFaculdade from '../src/images/Faculdade.png';
 import IconeBalanca from '../src/images/Balanca.png';
 import IconeCursos from '../src/images/Livro.png';
 import Apostrofo from '../src/images/apostrofo.png';
+import FotoPessoalDois from '../src/images/FotoPessoalDois.jpg';
+import FotoPessoalTres from '../src/images/FotoPessoalTres.jpg';
+import FotoJutsica from '../src/images/FotoJustica.jpg';
 import emailjs from '@emailjs/browser';
 import { Slide, Fade } from "react-awesome-reveal";
 
@@ -74,20 +77,20 @@ function LandingPageFunction() {
         <div class="presentation-container">
             <div class="presentation-texts-container">
                 <div class="presentation-text-top">
-                    <h2>Olá eu sou</h2>
+                    <h2>Olá, eu sou</h2>
                 </div>
                 <div class="presentation-text-bottom">
                     <p>Renata Oliveira</p>
                 </div>
                 <div class="presentation-text-bottom-two">
                     <h2>
-                        Técnica em Gestão de Políticas Públicas e
+                        Técnica em Gestão de Políticas Públicas<br/>
                         Mestre em Mediação e Resolução de Conflitos
                     </h2>
                 </div>
             </div>
             </div>
-            <div class="blocks color-blocks">
+            <div class="blocks-color-blocks">
                 <div class="block-one">
                     <div class="sub-block">
                         <div class="sub-block-one">
@@ -138,11 +141,11 @@ function LandingPageFunction() {
             <p>UM POUCO SOBRE MIM</p>
             </Slide>
           </div>
-          <div className="about-me-title">
+          {/*<div className="about-me-title">
           <Slide direction="left">
             <p>Quem sou eu?</p>
             </Slide>
-          </div>
+          </div>*/}
           <div className="about-me-text">
           <Slide direction="left">
             <p>
@@ -169,26 +172,20 @@ function LandingPageFunction() {
             <div className="about-me-block-one">
               <img src={IconeFaculdade} alt="Ícone de Good Ware" className="imagem-faculdade" href="https://br.freepik.com/search"/>
               <p className="initial">Formação</p>
-              <p className="about-title">Graduação</p>
-              <p className="name-information">Direito</p>
-              <p className="subtitle">Centro Universitário FMU</p>
-              <p className="duration">2015 - 2019</p>
+              <p className="about-title">Técnica em Gestão de Políticas Públicas<br/><br/>
+                Advogada formada em Direito pelas Faculdades Metropolitanas Unidas</p>
             </div>
             <div className="about-me-block-two">
               <img src={IconeCursos} alt="Icon by Freepik" className="imagem-pos-graduacao" href="https://www.freepik.com/icon/open-book_2702134#fromView=search&page=1&position=0&uuid=eabae85a-d63e-4eab-aef5-3b1574d98550"/>
               <p className="initial">Pós-Graduação</p>
-              <p className="about-title">Mestrado</p>
-              <p className="name-information">Resolução de Conflitos <br/>e Mediação</p>
-              <p className="subtitle">Fundação Universitária <br/> Iberoamericana - FUNIBER</p>
-              <p className="duration">2020 - 2023</p>
+              <p className="about-title">Mestre em Resolução de Conflitos e Mediação<br/><br/>
+              Pós-graduanda em Processo Penal</p>
             </div>
             <div className="about-me-block-three">
               <img src={IconeBalanca} alt="Ícone de Freepik" className="imagem-cursos" href="https://br.freepik.com/search"/>
               <p className="initial">Profissão</p>
-              <p className="about-title">Exercendo atualmente</p>
-              <p className="name-information">Advogada autônoma - <br/>Renata Oliveira Advocacia</p>
-              <p className="subtitle">Gerente Juírdico - <br/>Kurama Serviços e <br/>Transportes Ltda. </p>
-              <p className="duration">Advogada - <br/>Febrapo</p>
+              <p className="about-title">Advogada autonôma nas áreas Cível e Criminal<br/><br/>
+                Gerente Jurídica em Kurama Serviços e Transportes LTDA.</p>
             </div>
           </div>
           </Slide>
@@ -198,7 +195,7 @@ function LandingPageFunction() {
 <div className="information-banner">
           <div className="information-banner-text">
           <Slide direction="left">
-            <p>Áreas de Atuação</p>
+            <p>ÁREAS DE ATUAÇÃO</p>
           </Slide>
           </div>
           <div className="information-banner-blocks">
@@ -249,14 +246,54 @@ function LandingPageFunction() {
         </div>
         {/* Bloco informativo */}        
         <div className="second-information-banner">
-            <div className="second-information-banner-title">
-              <p>VALORES E MISSÃO</p>
-            </div>
-            <div className="seconde-information-banner-mission">
-              <Slide direction="up">
-              <p>"Disseminar informação para que as pessoas tenham a possibilidade de tomar escolhas conscientes."</p>
-              </Slide>
-          </div>
+        <div className="second-information-banner-title">
+    <p>MISSÃO</p>
+</div>
+<Slide direction="up">
+<div className="second-information-block-one">
+<div class="image-container-banner">
+        <img src={FotoPessoalDois} alt="Imagem Missão"/>
+    </div>
+<div className="seconde-information-banner-mission">
+        <p>Defender o direito do cliente e a aplicação da justiça com respeito às diferenças, 
+           crenças e escolhas individuais, de forma comprometida e transparente.
+        </p>
+    </div>
+</div>
+</Slide>
+
+<div className="second-information-banner-title">
+    <p>VISÃO</p>
+</div>
+<div className="second-information-block-two">
+<div class="image-container-banner">
+        <img src={FotoJutsica} alt="Imagem Visão"/>
+    </div>
+<div className="seconde-information-banner-mission">
+    <Slide direction="up">
+        <p>Tornar-se um escritório reconhecido pela excelência e individualidade
+           na trativa com o cliente, alinhando ascensão econômica e interesses sociais.
+        </p>
+    </Slide>
+</div>
+</div>
+
+
+<div className="second-information-banner-title">
+    <p>VALORES</p>
+</div>
+<div className="second-information-block-three">
+<div class="image-container-banner">
+        <img src={FotoPessoalTres} alt="Imagem Valores"/>
+    </div>
+<div className="seconde-information-banner-mission">
+    <Slide direction="up">
+        <p>Cada atividade desempenhada pelo escritório é baseada na transparência 
+           de informações, responsabilidade profissional, segurança jurídica e compatibilização de expectativas. 
+        </p>
+    </Slide>
+</div>
+</div>
         </div>
         
          {/*Bloco de opiniões de clientes */}
