@@ -77,19 +77,35 @@ function LandingPageFunction() {
         <div class="presentation-container">
             <div class="presentation-texts-container">
                 <div class="presentation-text-top">
-                    <h2>Olá, eu sou</h2>
+                    <h2>Olá, sou</h2>
                 </div>
                 <div class="presentation-text-bottom">
                     <p>Renata Oliveira</p>
                 </div>
-                <div class="presentation-text-bottom-two">
-                    <h2>
-                        Técnica em Gestão de Políticas Públicas<br/>
-                        Mestre em Mediação e Resolução de Conflitos
-                    </h2>
+            </div>
+            </div>
+            <div class="blocks-color-blocks">
+                <div class="block-one">
+                    <div class="sub-block">
+                        <div class="sub-block-one-pt1">
+                            <p>TÉCNICA</p>
+                        </div>
+                        <div class="sub-block-two">
+                            <p>em Gestão de Políticas Públicas</p>
+                        </div>
+                    </div>
                 </div>
+                <div class="block-two">
+                    <div class="sub-block">
+                        <div class="sub-block-one-pt1">
+                            <p>MESTRE</p>
+                        </div>
+                        <div class="sub-block-two">
+                            <p>em Mediação e Resolução de Conflitos</p>
+                        </div>
+                    </div>
             </div>
-            </div>
+        </div>
             <div class="blocks-color-blocks">
                 <div class="block-one">
                     <div class="sub-block">

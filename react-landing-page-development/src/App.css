@@ -4,7 +4,7 @@
 /* Área Total da Landing Page*/
 .LandingPage{
   text-align: center;
-  background-color: rgb(128, 128, 128);  /* Fundo azul */
+  background-color:rgb(127, 127, 127);  /* Fundo azul */
   height: 100vh; /* Define a altura da página como 100% da altura da tela */
   overflow-y: auto; /* Adiciona uma barra de rolagem vertical */
   width: 100%;
@@ -43,16 +43,16 @@
   justify-content: center;
   text-align: left;
   justify-content: space-between;
+  height: 100%;
 }
 
 .container-right {
   width: 50%;
-  padding: 20px;
   box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
-
+  height: 100%;
 }
 
 .presentation-container {
@@ -64,15 +64,16 @@
 .blocks-color-blocks {
 text-align: left;
 /*background-color: aquamarine;*/
-color: white;
+color: black;
 display: flex;
-margin: 3vw 5vw;  
+margin: 4vw 5vw;  
 text-align: justify;
 }
 .presentation-texts-container{
   flex-direction: column;
   text-align: left;
   /*background-color: aquamarine;*/
+  margin-bottom: 3vw;
 }
 
 .block-one,
@@ -86,6 +87,12 @@ flex-direction: column;
 padding-bottom: 10px;
 }
 
+.sub-block-one-pt1{
+  font-size: 20px;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 800;
+  font-style: normal;
+}
 .sub-block {
   display: flex;
 }
@@ -103,13 +110,12 @@ padding-bottom: 10px;
   display: flex;
   align-items: left;
   justify-content:space-around;
-  color: white;
+  color: black;
   text-align: justify;
 }
 
 .presentation-text {
-  max-width: 450px;
-  max-height: 450px;
+  height: auto;
   width: auto;
   text-align: left;
 }
@@ -120,6 +126,7 @@ padding-bottom: 10px;
     font-family: "Nanum Myeongjo", serif;
     font-weight: 800;
     font-style: normal;
+    margin-bottom: -2vw;
   }
 
   
@@ -132,9 +139,9 @@ padding-bottom: 10px;
   font-family: "Nanum Myeongjo", serif;
   font-weight: 800;
   font-style: normal;
-  color:#69223c
+  color:#69223c;
+  margin-top: -2vw;
 }
-
 .presentation-text-bottom-two h2{
   font-size: 20px;
   font-family: "Arimo", sans-serif;
@@ -143,14 +150,18 @@ padding-bottom: 10px;
   font-style: normal;
 }
 .presentation-image{
-  align-items: right;
+  align-items: center;
   display: flex;
-  height: 35vw;
-  width: 50%;
   justify-content: center;
-  padding: 20px ;
 }
 
+.presentation-image img{
+  align-items: center;
+  justify-content: center;
+  height: 36vw;
+  width: 25vw;
+  padding: 2vw 4vw;
+}
 
 /* BLOCOS */
 .the-block{
