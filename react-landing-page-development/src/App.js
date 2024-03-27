@@ -1,6 +1,6 @@
 import React, { useRef, useState} from 'react';
 import './App.css';
-import LogoPadrao from '../src/images/LogoPadrao.jpeg';
+import LogoPadrao from '../src/images/LogoPadrao.png';
 import PresentationImage from '../src/images/FotoPessoal.jpg';
 import ImagemWhatsApp from '../src/images/LogoWhatsApp.png';
 import ImagemInstagram from '../src/images/Icone-Instagram.png';
@@ -15,6 +15,9 @@ import FotoPessoalTres from '../src/images/FotoPessoalTres.jpg';
 import FotoJutsica from '../src/images/FotoJustica.jpg';
 import emailjs from '@emailjs/browser';
 import { Slide, Fade } from "react-awesome-reveal";
+import { HiOutlineMailOpen } from "react-icons/hi";
+import { FiMail, FiPhoneCall } from "react-icons/fi";
+
 
 function LandingPageFunction() {
 
@@ -75,14 +78,12 @@ function LandingPageFunction() {
       <Slide direction="left" delay={1}>
     <div class="container-left">
         <div class="presentation-container">
-            <div class="presentation-texts-container">
                 <div class="presentation-text-top">
                     <h2>Olá, sou</h2>
                 </div>
                 <div class="presentation-text-bottom">
                     <p>Renata Oliveira</p>
                 </div>
-            </div>
             </div>
             <div class="the-blocks">
                 <div class="block-one">
@@ -263,44 +264,62 @@ function LandingPageFunction() {
         {/* Bloco informativo */}        
         <div class="second-information-banner">
     <div class="second-information-banner-title-one">
+        <Slide direction="right" delay={1}>
         <p>MISSÃO</p>
+      </Slide>
     </div>
     <div class="second-information-block-one">
         <div class="image-container-banner">
+        <Slide direction="right" delay={1}>
             <img src={FotoPessoalDois} alt="Imagem Missão"/>
+          </Slide>
         </div>
         <div class="seconde-information-banner-mission">
+        <Slide direction="right" delay={1}>
             <p>Defender o direito do cliente e a aplicação da justiça com respeito às diferenças, 
                crenças e escolhas individuais, de forma comprometida e transparente.
             </p>
+           </Slide> 
         </div>
     </div>
 
     <div class="second-information-banner-title-two" >
+    <Slide direction="left" delay={1}>
         <p>VISÃO</p>
+        </Slide>
     </div>
     <div class="second-information-block-two">
         <div class="seconde-information-banner-vision">
+        <Slide direction="left" delay={1}>
             <p>Tornar-se um escritório reconhecido pela excelência e individualidade
-               na trativa com o cliente, alinhando ascensão econômica e interesses sociais.
+               na tratativa com o cliente, alinhando ascensão econômica e interesses sociais.
             </p>
+            </Slide>
         </div>
         <div class="image-container-banner">
+        <Slide direction="left" delay={1}>
             <img src={FotoJutsica} alt="Imagem Visão"/>
+            </Slide>
         </div>
     </div>
 
     <div class="second-information-banner-title-three">
+    <Slide direction="right" delay={1}>
         <p>VALORES</p>
+    </Slide>
     </div>
     <div class="second-information-block-three">
         <div class="image-container-banner">
+        <Slide direction="right" delay={1}>
             <img src={FotoPessoalTres} alt="Imagem Valores"/>
+            </Slide>
         </div>
         <div class="seconde-information-banner-mission">
+        <Slide direction="right" delay={1}>
             <p>Cada atividade desempenhada pelo escritório é baseada na transparência 
                de informações, responsabilidade profissional, segurança jurídica e compatibilização de expectativas. 
             </p>
+            </Slide>
         </div>
     </div>
 </div>
@@ -309,38 +328,50 @@ function LandingPageFunction() {
         <div className="customers-say-container">
         <Slide direction="right">
           <div className="customers-say-title">
-            <p>O que os clientes dizem</p>
+            <p>O QUE OS CLIENTES DIZEM</p>
           </div>
           <div className="customers-say-blocks">
             <div className="customers-block">
+              <div className="customers-image-container">
             <img src={Apostrofo} width="30px" alt="Icon by Icon Mela" className="imagem-apostrofo" href="https://www.freepik.com/icon/quote_7350737#fromView=search&page=1&position=1&uuid=f443d4c8-1302-4ad6-a68f-4a0061b221c7"/>
+            </div>
+            <div className="customers-text-container">
               <p>
                 A Dra Renata é extremamente profissional, atenciosa, interessada na resolução dos assuntos, 
                 sempre preocupada com o melhor para seus clientes, se empenhando ao máximo em cada detalhe. 
                 Uma defensora de confiança, que fez a diferença em minha vida.
               </p>
+              </div>
               <div className="customers-name">
-                <p>- Suely</p>
+                <p>- Suely Gorgati</p>
               </div>
             </div>
             <div className="customers-block">
+            <div className="customers-image-container">
             <img src={Apostrofo} width="30px" alt="Icon by Icon Mela" className="imagem-apostrofo" href="https://www.freepik.com/icon/quote_7350737#fromView=search&page=1&position=1&uuid=f443d4c8-1302-4ad6-a68f-4a0061b221c7"/>
+             </div>
+             <div className="customers-text-container">
               <p>
                 Ótima experiência.<br/>
                 Advogada muito competente, atenciosa e totalmente qualificada para solucionar meu problema. 
                 Você agora é meu contato de emergência!
               </p>
+              </div>
               <div className="customers-name">
-                <p>- Luan</p>
+                <p>- Luan Rufino</p>
               </div>
             </div>
             <div className="customers-block">
+            <div className="customers-image-container">
             <img src={Apostrofo} width="30px" alt="Icon by Icon Mela" className="imagem-apostrofo" href="https://www.freepik.com/icon/quote_7350737#fromView=search&page=1&position=1&uuid=f443d4c8-1302-4ad6-a68f-4a0061b221c7"/>
+              </div>
+              <div className="customers-text-container">
               <p>
                 Pontualmente comprometida com o cliente. Sempre recomendo de olhos fechados.
               </p>
+              </div>
               <div className="customers-name">
-                <p>- Cynthia</p>
+                <p>- Cynthia Kranholdt</p>
               </div>
             </div>
           </div>
@@ -352,20 +383,20 @@ function LandingPageFunction() {
   <div className="contact-information">
     <div className="contact-top">
     <Slide direction="left" delay={1}>
-      <p>Entre em contato</p>
+      <p>Entre em contato:</p>
     </Slide>
     </div>
     <div className="contact-group">
       <div className="contact-title">
       <Slide>
-        <p>Telefone: +55 11 98231-2948</p>
+      <a href="tel:+5511982312948" className="contact-link">Telefone: +55 11 98231-2948</a>
         </Slide>
       </div>
     </div>
     <div className="contact-group">
       <div className="contact-title">
         <Slide>
-        <p>E-mail: reoliveirarufino@adv.oabsp.org.br</p>
+        E-mail: <a href="mailto:reoliveirarufino@adv.oabsp.org.br" className="contact-link"> reoliveirarufino@adv.oabsp.org.br</a>
         </Slide>
       </div>
     </div>

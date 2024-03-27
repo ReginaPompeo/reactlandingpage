@@ -4,7 +4,8 @@
 /* Área Total da Landing Page*/
 .LandingPage{
   text-align: center;
-  background-color:rgb(127, 127, 127);  /* Fundo azul */
+  background-color: rgb(200, 200, 200);
+  /* Fundo azul */
   height: 100vh; /* Define a altura da página como 100% da altura da tela */
   overflow-y: auto; /* Adiciona uma barra de rolagem vertical */
   width: 100%;
@@ -16,15 +17,12 @@
   display: flex;
   background-color: RGB(105, 34, 60);/* Fundo rosa */
   height: 10%; /* Define a altura do cabeçalho como 100 pixels */
-  padding-top: 5px; /* Espaço do topo */
-  padding-left: 20px; /* Espaço do lado esquerdo */
-  padding-bottom: 5px;
+  padding: 12px 30px;
   width: 100%;
 }
 
 .LandingPage-header .rounded-image {
   display: flex;
-  border-radius: 500px; /* ou outro valor, dependendo do quanto deseja arredondar */
 }
 
 /*CONTAINER PÁGINA PRINCIPAL*/
@@ -32,26 +30,30 @@
 .container-wrapper {
   display: flex;
   align-items: center;
-  margin: 2vw 5vw;
+  margin: 0 14vw;
+  margin-top: 2vw;
+  margin-bottom: -2vw; /* Defina o valor da margem inferior conforme necessário */
 }
 
 .container-left {
   width: 50%;
   box-sizing: border-box;
   background-color: lightcoral;
-  height: 45vw;
+  height: 30vw;
 }
 
 .container-right {
   width: 50%;
   box-sizing: border-box;
-  height: 45vw;
+  height: 30vw;
   background-color:aqua ;
   align-items: center;
   justify-content: center;
 }
 
 .presentation-container {
+  margin-bottom: -1vw; /* Defina o valor da margem inferior conforme necessário */
+  text-align: left;
 }
 /*
 .blocks-color-blocks {
@@ -62,9 +64,7 @@ display: flex;
 margin: 4vw 5vw;  
 text-align: justify;
 }*/
-.presentation-texts-container{
-  text-align: left;
-}
+
 
 .the-blocks{
   display: flex;
@@ -73,12 +73,12 @@ text-align: justify;
 
 .block-one,
 .block-two{
-  width: 35%;
+  width: 45%;
   display: flex;
   text-align: left;
   display: flex;
   flex-direction: column;
-  padding: 2vw 0;
+  padding-bottom: 1vw;
   justify-content:space-around;
 }
 
@@ -125,7 +125,6 @@ flex-direction: column;
   font-weight: 800;
   font-style: normal;
   color:#69223c;
-  margin-top: -3vw;
 }
 .presentation-image{
 width: 100%;
@@ -135,8 +134,8 @@ align-items: center;
 padding: 0;
 }
 .presentation-image img{
-  height: 30vw;
-  width: 22vw;
+  height: 25vw;
+  width: 17vw;
 }
 
 /* BLOCOS */
@@ -168,11 +167,6 @@ padding: 0;
 }
 
 /*text-align: justify;   - CÓDIO PARA CASO O TEXTO SEJA JUSTIFICADO*/
-
-.sub-block-one,
-.sub-block-two {
-  
-}
 /* BANNER DE INFORMAÇÕES */
 
 .information-banner{
@@ -180,7 +174,8 @@ padding: 0;
   width: auto;
   background-color: RGB(105, 34, 60);/* Fundo rosa */
   margin-top: 10px;  
-  padding: 2vw 4vw;  
+  padding: 1vw 4vw;
+  margin-bottom: 1vw;
 } 
 
 .information-banner-text {
@@ -242,7 +237,9 @@ padding: 0;
   /*background-color: pink; /* Coral */
   text-align: left;
   padding: 20px;
-  margin: 2vw 4vw;
+  margin: 0 4vw;
+  margin-top: 2vw;
+  margin-bottom: -1vw;
 }
 
 .about-me-section{
@@ -274,6 +271,7 @@ padding: 0;
   font-style: normal;
   font-size: 18px;
   text-align: justify;
+  margin-bottom: 2vw;
 }
 
 .about-me-blocks{
@@ -285,7 +283,7 @@ padding: 0;
   width: auto;
   text-align: left;
   color:#69223c;
-  padding-top: 4vw;
+  margin-bottom: 1vw;
   }
 
 .about-me-block-one,
@@ -379,12 +377,19 @@ padding: 0;
   color:white;
   padding: 0 4vw;
 }
+.second-information-block-one{
+  margin-bottom: -4vw;
+}
+
+.second-information-block-three{
+  margin-bottom: 1vw;
+}
 .second-information-block-one,
 .second-information-block-three {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 20px;
+
         font-size: 25px; /* Tamanho da fonte */
   font-family: "Arimo", sans-serif;
   font-optical-sizing: auto;
@@ -412,6 +417,7 @@ padding: 0;
   text-align: justify;
   width: 65%;
   margin-left: auto; /* Move o bloco para a direita */
+  margin-bottom: -4vw;
 } 
 
 
@@ -431,7 +437,8 @@ padding: 0 3vw;
   height: 300px;
   margin-bottom: 300px;
   position: relative; /* Adiciona posição relativa à área pai */
-  padding: 2vw 4vw;  
+  padding: 0 4vw; 
+
 }
 .customers-say-title{
   text-align: left;
@@ -441,27 +448,25 @@ padding: 0 3vw;
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
-  font-size: 25px;
+  font-size: 20px;
   color: white;
   font-weight: bold;
-  padding: 20px;
+  padding: 1vw 4vw;
 }
 .customers-say-blocks {
   display: flex; /* Usa flexbox para layout */
   flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
   justify-content: space-between; /* Espaço uniformemente entre os blocos */
-  margin: 10px 50px;
+  margin: 0 4vw;
 }
 
 .customers-block {
   background-color: white;
   flex: 0 0 calc(20% - 10px); /* Define a largura dos blocos com espaço entre eles */
-  margin: 0 50px;
   border-radius: 50px;
   display: flex; /* Torna o container um flex container */
   flex-direction: column; /* Define a direção dos itens como vertical */
-  justify-content: center; /* Alinha os elementos horizontalmente */
-  padding: 55px 20px;
+  padding: 2vw;
   font-size: 18px;
   font-family: "Arimo", sans-serif;
   font-optical-sizing: auto;
@@ -469,7 +474,8 @@ padding: 0 3vw;
   font-style: normal;
   color:black;
   position: relative; /* Adiciona posição relativa ao bloco pai */
-  height: 18vw;
+  height: auto;
+  width: auto;
 }
 
 .customers-block:hover {
@@ -481,36 +487,41 @@ padding: 0 3vw;
   position: absolute; /* Define a posição absoluta */
   top: 0; /* Posiciona a partir do topo do bloco pai */
   left: 0; /* Posiciona a partir da borda esquerda do bloco pai */
-  padding-left: 20px;
-  padding-top: 20px;
-  padding-bottom: 10px;
+  padding-left: 2vw;
+  padding-top: 2vw;
 }
 
-
+.customers-text-container{
+height: 250px;
+padding:  0;
+display: flex;
+}
 .customers-block p {
-  text-align: left; /* Alinha o texto à esquerda */
+  text-align: justify; /* Alinha o texto à esquerda */
+  padding: 2vw 0;
+
 }
 
 .customers-name {
   text-align: left; /* Alinha o nome do cliente à esquerda */
+  bottom: 0; /* Posiciona a partir do fundo da tela */
+  left: 0; /* Posiciona a partir da borda esquerda da tela */
 }
 
 
 .contact-container {
-  margin-top: 100px;
   display: flex;
-  justify-content: center;
-  margin: 2vw 4vw; 
+  margin: 1vw 5vw; 
+  margin-top: 18vw;
 }
 
 .contact-information {
   background-color:  RGB(105, 34, 60);/* Fundo rosa */
-  margin-left: 30px;
-  width: 35%;
+  width: 30%;
   text-align: left;
   display: flex;
-  padding: 5vw 3vw;
    color: white;
+
 
 }
 
@@ -530,19 +541,22 @@ padding: 0 3vw;
   flex-direction: column;
 }
 
-
-.contact-text {
-  font-family: 'Roboto', sans-serif;
-  font-size: 15px;  
-  padding-top: -150px;
+.contact-link a {
+  color: white;
+  font-family: "Arimo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 18px;
+  text-align: justify;
+  text-decoration: none; /* Remove o sublinhado padrão */
+  /* Adicione mais estilos conforme necessário */
 }
 
 
 .contact-fields{
   background-color: white;
-  margin-right: 30px;  
   width: 65%;
-  padding-left: 20px;
   padding-bottom: 20px;
 }
 
@@ -565,14 +579,14 @@ padding: 0 3vw;
   font-style: normal;
   font-size: 25px;
   color:#69223c;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 .contact-information,
 .contact-fields {
   display: flex; /* Ativa o modelo de layout flexível para os elementos filhos */
   flex-direction: column; /* Alinha os itens verticalmente */
-  justify-content: center; /* Centraliza verticalmente os itens */
+  padding: 2vw 2vw
 }
 .form-group {
   margin-bottom: 20px;
@@ -784,11 +798,6 @@ button[type="submit"]:hover {
     margin-top: 30px;
   }
 
-  
-  .sub-block-three {
-
-  }
-  
   /*text-align: justify;   - CÓDIO PARA CASO O TEXTO SEJA JUSTIFICADO*/
   
   .sub-block-one,
