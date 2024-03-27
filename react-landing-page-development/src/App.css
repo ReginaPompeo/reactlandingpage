@@ -31,60 +31,63 @@
 
 .container-wrapper {
   display: flex;
+  align-items: center;
+  margin: 2vw 5vw;
 }
 
 .container-left {
   width: 50%;
   box-sizing: border-box;
-  /*background-color: lightcoral;*/
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: left;
-  justify-content: space-between;
-  height: 100%;
+  background-color: lightcoral;
+  height: 45vw;
 }
 
 .container-right {
   width: 50%;
   box-sizing: border-box;
-  display: flex;
+  height: 45vw;
+  background-color:aqua ;
   align-items: center;
   justify-content: center;
-  height: 100%;
 }
 
 .presentation-container {
-  display: flex;
-  flex-direction: column;
-  margin: 2vw 5vw;
 }
-
+/*
 .blocks-color-blocks {
 text-align: left;
-/*background-color: aquamarine;*/
+/*background-color: aquamarine;
 color: black;
 display: flex;
 margin: 4vw 5vw;  
 text-align: justify;
-}
+}*/
 .presentation-texts-container{
-  flex-direction: column;
   text-align: left;
-  /*background-color: aquamarine;*/
-  margin-bottom: 3vw;
+}
+
+.the-blocks{
+  display: flex;
+  text-align: justify;
 }
 
 .block-one,
 .block-two{
-  width: 50%;
-  padding-right: 5vw;
+  width: 35%;
+  display: flex;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 0;
+  justify-content:space-around;
+}
+
+.block-one{
+  padding-right: 2vw;
 }
 .block-one .sub-block,
 .block-two .sub-block{
 flex-direction: column;
-padding-bottom: 10px;
 }
 
 .sub-block-one-pt1{
@@ -106,78 +109,42 @@ padding-bottom: 10px;
 
 /* APRESENTAÇÃO */
 
-.presentation-container{
-  display: flex;
-  align-items: left;
-  justify-content:space-around;
-  color: black;
-  text-align: justify;
-}
-
-.presentation-text {
-  height: auto;
-  width: auto;
-  text-align: left;
-}
-
   .presentation-text-top {
     /*background-color:*/
-    font-size: 20px;
+    font-size: 18px;
     font-family: "Nanum Myeongjo", serif;
     font-weight: 800;
     font-style: normal;
     margin-bottom: -2vw;
   }
 
-  
-
-  
-
 .presentation-text-bottom{
   /*background-color:*/
-  font-size: 50px;
+  font-size: 45px;
   font-family: "Nanum Myeongjo", serif;
   font-weight: 800;
   font-style: normal;
   color:#69223c;
-  margin-top: -2vw;
-}
-.presentation-text-bottom-two h2{
-  font-size: 20px;
-  font-family: "Arimo", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
+  margin-top: -3vw;
 }
 .presentation-image{
-  align-items: center;
-  display: flex;
-  justify-content: center;
+width: 100%;
+height: 100%;
+justify-content: center;
+align-items: center;
+padding: 0;
 }
-
 .presentation-image img{
-  align-items: center;
-  justify-content: center;
-  height: 36vw;
-  width: 25vw;
-  padding: 2vw 4vw;
+  height: 30vw;
+  width: 22vw;
 }
 
 /* BLOCOS */
-.the-block{
-  /*background-color:*/
-  /*width: auto;
-  height: auto;
-  text-align: left;
-  flex-direction: row;
-  display:flex;
-  color: black;*/
-}
 
 
 .sub-block-one {
   /*background-color: /* Cor de fundo amarela */
-  font-size: 40px;
+  font-size: 38px;
   font-family: "Nanum Myeongjo", serif;
   font-weight: 800;
   font-style: normal;
@@ -186,7 +153,7 @@ padding-bottom: 10px;
 
 .sub-block-two {
   /*background-color: /* Cor de fundo verde */
-  font-size: 20px;
+  font-size: 19px;
   font-family: "Nanum Myeongjo", serif;
   font-weight: 800;
   font-style: normal;
@@ -383,27 +350,24 @@ padding-bottom: 10px;
   color: black;
 
 }
+
 .second-information-banner {
   display: flex;
   flex-direction: column;
-  font-size: 25px; /* Tamanho da fonte */
-  font-family: "Arimo", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
-  color: #69223C;
-  
+  margin: 1vw 5vw;
 }
 
 
-.second-information-banner-title {
+.second-information-banner-title-one,
+.second-information-banner-title-three
+ {
   font-family: "Nanum Myeongjo", serif;
   font-weight: 800;
   font-style: normal;
   font-size: 20px;
   text-align: left;
   color:white;
-
+  padding: 0 4vw;
 }
 
 .second-information-banner-title-two{
@@ -413,38 +377,54 @@ padding-bottom: 10px;
   font-size: 20px;
   text-align: right;
   color:white;
-}
-.seconde-information-banner-mission{
-  width: 50%;
+  padding: 0 4vw;
 }
 .second-information-block-one,
 .second-information-block-three {
-        flex: 1;
         display: flex;
-        flex-direction:row;
+        justify-content: space-between;
         align-items: center;
-        text-align: justify;
-        width: 70%;
-}
+        margin-bottom: 20px;
+        font-size: 25px; /* Tamanho da fonte */
+  font-family: "Arimo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  color: #69223C;
+  text-align: justify;
+  width: 65%;
+    }
 
-.second-information-block-two{
-        flex: 1;
-        display: flex;
-        flex-direction:row-reverse;
-        align-items: center;
-        text-align: justify;
-        justify-content:  space-between;
-        width: 70%;
-}
+
+
+    .second-information-block-two {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row; /* Reversing direction for image and text */
+      margin-bottom: 20px;
+      font-size: 25px; /* Tamanho da fonte */
+  font-family: "Arimo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  color: #69223C;
+  text-align: justify;
+  width: 65%;
+  margin-left: auto; /* Move o bloco para a direita */
+} 
+
 
 .image-container-banner{
 width: 50%;
+padding: 0 3vw;
 }
 
 .image-container-banner img{
-  height: 15vw;
-  width: 60%;
-  border-radius: 150px;
+  height: 13vw;
+  width: 18vw;
+  border-radius: 50px;
+  flex: 1;
 }
 .customers-say-container{
   background-color:RGB(105, 34, 60);/* Fundo rosa */

@@ -84,7 +84,7 @@ function LandingPageFunction() {
                 </div>
             </div>
             </div>
-            <div class="blocks-color-blocks">
+            <div class="the-blocks">
                 <div class="block-one">
                     <div class="sub-block">
                         <div class="sub-block-one-pt1">
@@ -106,7 +106,7 @@ function LandingPageFunction() {
                     </div>
             </div>
         </div>
-            <div class="blocks-color-blocks">
+            <div class="the-blocks">
                 <div class="block-one">
                     <div class="sub-block">
                         <div class="sub-block-one">
@@ -261,56 +261,49 @@ function LandingPageFunction() {
           </div>
         </div>
         {/* Bloco informativo */}        
-        <div className="second-information-banner">
-        <div className="second-information-banner-title">
-    <p>MISSÃO</p>
-</div>
-<Slide direction="up">
-<div className="second-information-block-one">
-<div class="image-container-banner">
-        <img src={FotoPessoalDois} alt="Imagem Missão"/>
+        <div class="second-information-banner">
+    <div class="second-information-banner-title-one">
+        <p>MISSÃO</p>
     </div>
-<div className="seconde-information-banner-mission">
-        <p>Defender o direito do cliente e a aplicação da justiça com respeito às diferenças, 
-           crenças e escolhas individuais, de forma comprometida e transparente.
-        </p>
-    </div>
-</div>
-</Slide>
-
-<div className="second-information-banner-title">
-    <p>VISÃO</p>
-</div>
-<div className="second-information-block-two">
-<div class="image-container-banner">
-        <img src={FotoJutsica} alt="Imagem Visão"/>
-    </div>
-<div className="seconde-information-banner-mission">
-    <Slide direction="up">
-        <p>Tornar-se um escritório reconhecido pela excelência e individualidade
-           na trativa com o cliente, alinhando ascensão econômica e interesses sociais.
-        </p>
-    </Slide>
-</div>
-</div>
-
-
-<div className="second-information-banner-title">
-    <p>VALORES</p>
-</div>
-<div className="second-information-block-three">
-<div class="image-container-banner">
-        <img src={FotoPessoalTres} alt="Imagem Valores"/>
-    </div>
-<div className="seconde-information-banner-mission">
-    <Slide direction="up">
-        <p>Cada atividade desempenhada pelo escritório é baseada na transparência 
-           de informações, responsabilidade profissional, segurança jurídica e compatibilização de expectativas. 
-        </p>
-    </Slide>
-</div>
-</div>
+    <div class="second-information-block-one">
+        <div class="image-container-banner">
+            <img src={FotoPessoalDois} alt="Imagem Missão"/>
         </div>
+        <div class="seconde-information-banner-mission">
+            <p>Defender o direito do cliente e a aplicação da justiça com respeito às diferenças, 
+               crenças e escolhas individuais, de forma comprometida e transparente.
+            </p>
+        </div>
+    </div>
+
+    <div class="second-information-banner-title-two" >
+        <p>VISÃO</p>
+    </div>
+    <div class="second-information-block-two">
+        <div class="seconde-information-banner-vision">
+            <p>Tornar-se um escritório reconhecido pela excelência e individualidade
+               na trativa com o cliente, alinhando ascensão econômica e interesses sociais.
+            </p>
+        </div>
+        <div class="image-container-banner">
+            <img src={FotoJutsica} alt="Imagem Visão"/>
+        </div>
+    </div>
+
+    <div class="second-information-banner-title-three">
+        <p>VALORES</p>
+    </div>
+    <div class="second-information-block-three">
+        <div class="image-container-banner">
+            <img src={FotoPessoalTres} alt="Imagem Valores"/>
+        </div>
+        <div class="seconde-information-banner-mission">
+            <p>Cada atividade desempenhada pelo escritório é baseada na transparência 
+               de informações, responsabilidade profissional, segurança jurídica e compatibilização de expectativas. 
+            </p>
+        </div>
+    </div>
+</div>
         
          {/*Bloco de opiniões de clientes */}
         <div className="customers-say-container">
