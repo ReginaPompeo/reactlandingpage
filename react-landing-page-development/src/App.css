@@ -30,7 +30,7 @@
 .container-wrapper {
   display: flex;
   align-items: center;
-  margin: 0 14vw;
+  margin: 0 14rem;
   margin-top: 2vw;
   margin-bottom: -2vw; /* Defina o valor da margem inferior conforme necessário */
 }
@@ -39,20 +39,20 @@
   width: 50%;
   box-sizing: border-box;
   background-color: lightcoral;
-  height: 30vw;
+  height: 30rem;
 }
 
 .container-right {
   width: 50%;
   box-sizing: border-box;
-  height: 30vw;
+  height: 30rem;
   background-color:aqua ;
   align-items: center;
   justify-content: center;
 }
 
 .presentation-container {
-  margin-bottom: -1vw; /* Defina o valor da margem inferior conforme necessário */
+  margin-bottom: -1rem; /* Defina o valor da margem inferior conforme necessário */
   text-align: left;
 }
 /*
@@ -78,7 +78,7 @@ text-align: justify;
   text-align: left;
   display: flex;
   flex-direction: column;
-  padding-bottom: 1vw;
+  padding-bottom: 1rem;
   justify-content:space-around;
 }
 
@@ -115,7 +115,7 @@ flex-direction: column;
     font-family: "Nanum Myeongjo", serif;
     font-weight: 800;
     font-style: normal;
-    margin-bottom: -2vw;
+    margin-bottom: -2rem;
   }
 
 .presentation-text-bottom{
@@ -134,8 +134,8 @@ align-items: center;
 padding: 0;
 }
 .presentation-image img{
-  height: 25vw;
-  width: 17vw;
+  height: 25rem;
+  width: 17rem;
 }
 
 /* BLOCOS */
@@ -290,10 +290,8 @@ padding: 0;
 .about-me-block-two,
 .about-me-block-three{
   background-color: white;
-  height: auto;
-  width: 20%;
-  min-width: 20vw ;
-  min-height: 15vw;
+  height: 20rem;
+  width: 25rem;
   border-radius: 50px;
   display: flex; /* Torna o container um flex container */
   flex-direction:column; /* Define a direção dos itens como vertical */
@@ -466,7 +464,7 @@ padding: 0 3vw;
   border-radius: 50px;
   display: flex; /* Torna o container um flex container */
   flex-direction: column; /* Define a direção dos itens como vertical */
-  padding: 2vw;
+  padding: 1rem;
   font-size: 18px;
   font-family: "Arimo", sans-serif;
   font-optical-sizing: auto;
@@ -474,8 +472,8 @@ padding: 0 3vw;
   font-style: normal;
   color:black;
   position: relative; /* Adiciona posição relativa ao bloco pai */
-  height: auto;
-  width: auto;
+  height: 25rem;
+  width: 16rem;
 }
 
 .customers-block:hover {
@@ -493,7 +491,7 @@ padding: 0 3vw;
 
 .customers-text-container{
 height: 250px;
-padding:  0;
+padding-bottom: 2rem;
 display: flex;
 }
 .customers-block p {
@@ -557,7 +555,6 @@ display: flex;
 .contact-fields{
   background-color: white;
   width: 65%;
-  padding-bottom: 20px;
 }
 
 .contact-title{
@@ -586,10 +583,10 @@ display: flex;
 .contact-fields {
   display: flex; /* Ativa o modelo de layout flexível para os elementos filhos */
   flex-direction: column; /* Alinha os itens verticalmente */
-  padding: 2vw 2vw
+  padding: 2vw 2vw;
 }
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 1vw;
 }
 
 .form-group label {
@@ -646,11 +643,17 @@ button[type="submit"] {
   width: 40%;
   background-color: RGB(105, 34, 60);/* Fundo rosa */
   color: white;
-  padding: 10px 20px;
+  padding: 12px 20px;
   border: 2px solid RGB(105, 34, 60);/* Fundo rosa */ /* Adiciona uma borda sólida com a cor #69223c */
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease; /* Adiciona transição suave para a cor de fundo e cor do texto */
+  margin-bottom: 1vw;
+  font-size: 15px;
+  font-family: "Arimo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
 }
 
 button[type="submit"]:hover {
@@ -696,8 +699,26 @@ button[type="submit"]:hover {
   align-items: center;
 }
 
+@media screen and (min-width: 1200px) and (max-width: 1300px) {
+  .container-wrapper{
+    margin: 0 13rem;
+  }
 
+  .customers-block {
+    flex: 0 0 calc(25% - 8px); /* Define a largura dos blocos com espaço entre eles */
+  }
+}
 
+@media screen and (min-width: 1100px) and (max-width: 1199px){
+  .container-wrapper {
+    margin: 0 12rem;
+  }
+}
+@media screen and (min-width: 980px) and (max-width: 1080px) {
+  .customers-block {
+    flex: 0 0 calc(28% - 2px); /* Define a largura dos blocos com espaço entre eles */
+  }
+}
 
 @media screen and (min-width: 500px) and (max-width: 980px) {
   .LandingPage-header {
@@ -839,20 +860,15 @@ button[type="submit"]:hover {
   }
 
   .about-me-blocks{
-    flex-direction:column;
   }
-  .about-me-blocks > * {
-    margin-bottom: 20px; /* Adiciona uma margem inferior de 20px entre os elementos */
-  }
+
   
   .about-me-block-one,
   .about-me-block-two,
   .about-me-block-three{
-    width: 40%;
-    min-width: 200px ;
-    min-height: 200px;
-    margin-left: 50px;
-    margin-right: 50px;
+    width: 35%;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
   
   .title{
@@ -862,6 +878,17 @@ button[type="submit"]:hover {
   .subtitle,
   .duration{
     font-size: clamp(15px, 3vw, 17px);
+  }
+
+  .customers-block {
+    flex: 0 0 calc(28% - 10px); /* Define a largura dos blocos com espaço entre eles */
+    height: 40vw;
+    width: 35vw;
+    margin-bottom: 20px; /* Adiciona uma margem inferior de 20px entre os elementos */
+  }
+  .customers-say-blocks > * {
+    flex-direction: column;
+
   }
   
 }

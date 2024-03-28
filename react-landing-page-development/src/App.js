@@ -380,23 +380,23 @@ function LandingPageFunction() {
 
         {/* Bloco para entrar em contato */}
         <div className="contact-container">
-  <div className="contact-information">
+        <div className="contact-information">
     <div className="contact-top">
     <Slide direction="left" delay={1}>
-      <p>Entre em contato:</p>
+      <p>Entre em contato</p>
     </Slide>
     </div>
     <div className="contact-group">
       <div className="contact-title">
       <Slide>
-      <a href="tel:+5511982312948" className="contact-link">Telefone: +55 11 98231-2948</a>
+        <p>Telefone: +55 11 98231-2948</p>
         </Slide>
       </div>
     </div>
     <div className="contact-group">
       <div className="contact-title">
         <Slide>
-        E-mail: <a href="mailto:reoliveirarufino@adv.oabsp.org.br" className="contact-link"> reoliveirarufino@adv.oabsp.org.br</a>
+        <p>E-mail: reoliveirarufino@adv.oabsp.org.br</p>
         </Slide>
       </div>
     </div>
@@ -423,16 +423,19 @@ function LandingPageFunction() {
         <div className="footer">
           <div className="social-medias">
             <a href="https://www.instagram.com/advocaciarenataoliveira/" target="_blank" rel="noopener noreferrer">
-              <img src={ImagemInstagram} width="30px" alt="Fale conosco pelo Instagram (Ícone de Pixel perfect)" title="" />
+              <img src={ImagemInstagram} width="40px" alt="Fale conosco pelo Instagram (Ícone de Pixel perfect)" title="" />
             </a>
             {/* Icone Instagram -> <a href="https://br.freepik.com/icone/instagram_2111463#fromView=search&page=1&position=0&uuid=eb408666-e14b-4187-b7d9-387f6febfb97">Ícone de Pixel perfect</a>*/}
+            {/* <a href="https://www.flaticon.com/br/icones-gratis/logotipo-do-instagram" title="logotipo do instagram ícones">Logotipo do instagram ícones criados por Hight Quality Icons - Flaticon</a> */}
             <a href="https://wa.me/5511982312948?text=Olá! Gostaria de saber mais informações." target="_blank" rel="noopener noreferrer">
-              <img src={IconeWhatsApp} width="30px" alt="Fale conosco pelo WhatsApp (Ícone de Grafixpoint)" title="" />
+              <img src={IconeWhatsApp} width="40px" alt="Fale conosco pelo WhatsApp (Ícone de Grafixpoint)" title="" />
             </a>
             {/* Icone WhatsApp -> <a href="https://br.freepik.com/icone/social_13051741#fromView=search&page=1&position=21&uuid=b877d762-ab84-4e2d-ab56-feae75f8c88c">Ícone de Grafixpoint</a>*/}
+            {/* <a href="https://www.flaticon.com/br/icones-gratis/whatsapp" title="whatsapp ícones">Whatsapp ícones criados por Hight Quality Icons - Flaticon</a> */}
             <a href="https://www.linkedin.com/in/reoliveirarufino/" target="_blank" rel="noopener noreferrer">
-              <img src={IconeLinkedin} width="30px" alt="Conheça meu Linkedin (Ícone de riajulislam)" title="" />
-            </a>
+              <img src={IconeLinkedin} width="40px" alt="Conheça meu Linkedin (Ícone de riajulislam)" title="" />
+              </a>
+            {/*<a href="https://www.flaticon.com/br/icones-gratis/linkedin" title="linkedin ícones">Linkedin ícones criados por Md Tanvirul Haque - Flaticon</a> */}
             {/* Icone Linkedin -> <a href="https://br.freepik.com/icone/linkedin_3536505#fromView=search&page=1&position=11&uuid=1f1bd414-5037-46a8-8ee5-a1a9328815d4">Ícone de riajulislam</a>*/}
           </div>
           <p className="footer-text">&copy; 2024 Advogada Renata Oliveira. <br/>Todos os direitos reservados a Regina Pompeo.</p>
@@ -441,8 +444,9 @@ function LandingPageFunction() {
 
         <div className="WhatsApp">
           <a href="https://wa.me/5511982312948?text=Olá! Gostaria de saber mais informações." target="_blank">
-          <img src={ImagemWhatsApp} width="45px" alt="Fale conosco pelo WhatsApp (Ícone de Fathema Khanom)" title=""/>
+          <img src={ImagemWhatsApp} width="50px" alt="Fale conosco pelo WhatsApp (Ícone de Fathema Khanom)" title=""/>
           {/* <a href="https://br.freepik.com/icone/whatsapp_3670051#fromView=search&page=1&position=0&uuid=81b074a2-483d-431e-a61c-70f67708697f">Ícone de Fathema Khanom</a>*/}
+          {/* <a href="https://www.flaticon.com/br/icones-gratis/whatsapp" title="whatsapp ícones">Whatsapp ícones criados por Fathema Khanom - Flaticon</a> */}
           </a>
         </div>
   </div>
